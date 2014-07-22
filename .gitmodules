@@ -1,0 +1,3 @@
+[submodule "Arciem"]
+	path = Arciem
+	url = git@github.com:arciem/Arciem.git
