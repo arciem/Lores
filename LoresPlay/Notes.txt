@@ -1,0 +1,14 @@
+        for i in 0..<50 {
+            canvas.setPoint(canvas.randomPoint(), color: Color.randomColor())
+        }
+
+        canvas.setPoint(Point(x: canvas.maxX, y: canvas.minY), color: Color.Green)
+        canvas.setPoint(Point(x: canvas.maxX, y: canvas.maxY), color: Color.Blue)
+        canvas.setPoint(Point(x: canvas.minX, y: canvas.maxY), color: Color.Yellow)
+        canvas.setPoint(Point(x: canvas.midX, y: canvas.midY), color: Color.White)
+
+        for x in canvas.minX...canvas.maxX {
+            let hue = map(Float(x), Float(canvas.minX), Float(canvas.maxX), 0.0, 1.0)
+            let c = Color(hue: hue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
+            canvas.setPoint(Point(x: x, y: canvas.midY / 2), color:c)
+        }

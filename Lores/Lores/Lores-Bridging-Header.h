@@ -2,11 +2,11 @@
 //  Lores.h
 //  Lores
 //
-//  Created by Robert McNally on 7/22/14.
+//  Created by Robert McNally on 7/30/14.
 //  Copyright (c) 2014 Arciem LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 //! Project version number for Lores.
 FOUNDATION_EXPORT double LoresVersionNumber;

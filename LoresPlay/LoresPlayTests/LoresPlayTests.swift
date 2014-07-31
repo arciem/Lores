@@ -1,15 +1,15 @@
 //
-//  LoresTests.swift
-//  LoresTests
+//  LoresPlayTests.swift
+//  LoresPlayTests
 //
-//  Created by Robert McNally on 7/30/14.
+//  Created by Robert McNally on 7/22/14.
 //  Copyright (c) 2014 Arciem LLC. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class LoresTests: XCTestCase {
+class LoresPlayTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

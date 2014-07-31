@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0336F3FD1989CF9700365893 /* Arciem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F3FB1989CF9700365893 /* Arciem.framework */; };
+		0336F3FF1989CFDA00365893 /* Lores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F3FC1989CF9700365893 /* Lores.framework */; };
+		0353011E1989F3E800879270 /* ProgramSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03825F4A198996ED001A526D /* ProgramSelector.swift */; };
+		035301201989FCDC00879270 /* GravelProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353011F1989FCDC00879270 /* GravelProgram.swift */; };
+		035301221989FD6200879270 /* MoveProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035301211989FD6200879270 /* MoveProgram.swift */; };
+		036608B4197F815900DCDBC6 /* Lores.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036608B3197F815900DCDBC6 /* Lores.xcassets */; };
+		03826F2F1988724400704E30 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03826F2E1988724400704E30 /* Accelerate.framework */; };
+		0392A4121989C8750045F35B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E3403E197F132E005AA69F /* Main.storyboard */; };
+		0393751F1989C9550045D688 /* EmptyProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03825F501989A093001A526D /* EmptyProgram.swift */; };
+		039375201989C9550045D688 /* HelloPixelProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03825F46198972BB001A526D /* HelloPixelProgram.swift */; };
+		039375211989C9550045D688 /* PebblesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03825F531989A93B001A526D /* PebblesProgram.swift */; };
+		039375221989C9550045D688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E3403A197F132E005AA69F /* AppDelegate.swift */; };
+		039375231989C9550045D688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E3403C197F132E005AA69F /* ViewController.swift */; };
+		039375251989CBAE0045D688 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039375241989CBAE0045D688 /* Foundation.framework */; };
+		039375271989CBB80045D688 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039375261989CBB80045D688 /* UIKit.framework */; };
+		039375291989CBBD0045D688 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039375281989CBBD0045D688 /* QuartzCore.framework */; };
+		03E34042197F132E005AA69F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E34041197F132E005AA69F /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0336F3FB1989CF9700365893 /* Arciem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Arciem.framework; path = "../../../Library/Developer/Xcode/DerivedData/Lores-enknurcmdmfrzreefhmdpcrdeqsf/Build/Products/Debug-iphoneos/Arciem.framework"; sourceTree = "<group>"; };
+		0336F3FC1989CF9700365893 /* Lores.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lores.framework; path = "../../../Library/Developer/Xcode/DerivedData/Lores-enknurcmdmfrzreefhmdpcrdeqsf/Build/Products/Debug-iphoneos/Lores.framework"; sourceTree = "<group>"; };
+		0353011F1989FCDC00879270 /* GravelProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravelProgram.swift; sourceTree = "<group>"; };
+		035301211989FD6200879270 /* MoveProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveProgram.swift; sourceTree = "<group>"; };
+		036608B3197F815900DCDBC6 /* Lores.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Lores.xcassets; path = ../../Lores/Lores/Lores.xcassets; sourceTree = "<group>"; };
+		03825F46198972BB001A526D /* HelloPixelProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloPixelProgram.swift; sourceTree = "<group>"; };
+		03825F4919899643001A526D /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = Notes.txt; path = ../Notes.txt; sourceTree = "<group>"; };
+		03825F4A198996ED001A526D /* ProgramSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramSelector.swift; sourceTree = "<group>"; };
+		03825F501989A093001A526D /* EmptyProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyProgram.swift; sourceTree = "<group>"; };
+		03825F531989A93B001A526D /* PebblesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PebblesProgram.swift; sourceTree = "<group>"; };
+		03826F2E1988724400704E30 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		039375241989CBAE0045D688 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		039375261989CBB80045D688 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		039375281989CBBD0045D688 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		03E34035197F132E005AA69F /* LoresPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoresPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E34039197F132E005AA69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E3403A197F132E005AA69F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03E3403C197F132E005AA69F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03E3403F197F132E005AA69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03E34041197F132E005AA69F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		03E3404C197F132E005AA69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E3404D197F132E005AA69F /* LoresPlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoresPlayTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03E34032197F132E005AA69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039375251989CBAE0045D688 /* Foundation.framework in Frameworks */,
+				039375271989CBB80045D688 /* UIKit.framework in Frameworks */,
+				039375291989CBBD0045D688 /* QuartzCore.framework in Frameworks */,
+				03826F2F1988724400704E30 /* Accelerate.framework in Frameworks */,
+				0336F3FD1989CF9700365893 /* Arciem.framework in Frameworks */,
+				0336F3FF1989CFDA00365893 /* Lores.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03825F4519897299001A526D /* Programs */ = {
+			isa = PBXGroup;
+			children = (
+				03825F501989A093001A526D /* EmptyProgram.swift */,
+				03825F46198972BB001A526D /* HelloPixelProgram.swift */,
+				03825F531989A93B001A526D /* PebblesProgram.swift */,
+				0353011F1989FCDC00879270 /* GravelProgram.swift */,
+				035301211989FD6200879270 /* MoveProgram.swift */,
+			);
+			name = Programs;
+			path = LoresPlay/Programs;
+			sourceTree = "<group>";
+		};
+		03825F4819899590001A526D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				03E3403A197F132E005AA69F /* AppDelegate.swift */,
+				03E3403C197F132E005AA69F /* ViewController.swift */,
+				03E3403E197F132E005AA69F /* Main.storyboard */,
+				03E34041197F132E005AA69F /* Images.xcassets */,
+				036608B3197F815900DCDBC6 /* Lores.xcassets */,
+				03E34038197F132E005AA69F /* Supporting Files */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		03E3402C197F132E005AA69F = {
+			isa = PBXGroup;
+			children = (
+				03825F4519897299001A526D /* Programs */,
+				03E34037197F132E005AA69F /* LoresPlay */,
+				03E3404A197F132E005AA69F /* LoresPlayTests */,
+				03E3405F197F1456005AA69F /* Frameworks */,
+				03E34036197F132E005AA69F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03E34036197F132E005AA69F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03E34035197F132E005AA69F /* LoresPlay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03E34037197F132E005AA69F /* LoresPlay */ = {
+			isa = PBXGroup;
+			children = (
+				03825F4919899643001A526D /* Notes.txt */,
+				03825F4A198996ED001A526D /* ProgramSelector.swift */,
+				03825F4819899590001A526D /* App */,
+			);
+			path = LoresPlay;
+			sourceTree = "<group>";
+		};
+		03E34038197F132E005AA69F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03E34039197F132E005AA69F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03E3404A197F132E005AA69F /* LoresPlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				03E3404D197F132E005AA69F /* LoresPlayTests.swift */,
+				03E3404B197F132E005AA69F /* Supporting Files */,
+			);
+			path = LoresPlayTests;
+			sourceTree = "<group>";
+		};
+		03E3404B197F132E005AA69F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03E3404C197F132E005AA69F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03E3405F197F1456005AA69F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				039375241989CBAE0045D688 /* Foundation.framework */,
+				039375261989CBB80045D688 /* UIKit.framework */,
+				039375281989CBBD0045D688 /* QuartzCore.framework */,
+				03826F2E1988724400704E30 /* Accelerate.framework */,
+				0336F3FB1989CF9700365893 /* Arciem.framework */,
+				0336F3FC1989CF9700365893 /* Lores.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03E34034197F132E005AA69F /* LoresPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E34051197F132E005AA69F /* Build configuration list for PBXNativeTarget "LoresPlay" */;
+			buildPhases = (
+				03E34031197F132E005AA69F /* Sources */,
+				03E34032197F132E005AA69F /* Frameworks */,
+				03E34033197F132E005AA69F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoresPlay;
+			productName = LoresPlay;
+			productReference = 03E34035197F132E005AA69F /* LoresPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03E3402D197F132E005AA69F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Arciem LLC";
+				TargetAttributes = {
+					03E34034197F132E005AA69F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 03E34030197F132E005AA69F /* Build configuration list for PBXProject "LoresPlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03E3402C197F132E005AA69F;
+			productRefGroup = 03E34036197F132E005AA69F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03E34034197F132E005AA69F /* LoresPlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03E34033197F132E005AA69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0392A4121989C8750045F35B /* Main.storyboard in Resources */,
+				03E34042197F132E005AA69F /* Images.xcassets in Resources */,
+				036608B4197F815900DCDBC6 /* Lores.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03E34031197F132E005AA69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039375231989C9550045D688 /* ViewController.swift in Sources */,
+				0353011E1989F3E800879270 /* ProgramSelector.swift in Sources */,
+				039375211989C9550045D688 /* PebblesProgram.swift in Sources */,
+				035301221989FD6200879270 /* MoveProgram.swift in Sources */,
+				039375201989C9550045D688 /* HelloPixelProgram.swift in Sources */,
+				0393751F1989C9550045D688 /* EmptyProgram.swift in Sources */,
+				039375221989C9550045D688 /* AppDelegate.swift in Sources */,
+				035301201989FCDC00879270 /* GravelProgram.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03E3403E197F132E005AA69F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03E3403F197F132E005AA69F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03E3404F197F132E005AA69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03E34050197F132E005AA69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03E34052197F132E005AA69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = LoresPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		03E34053197F132E005AA69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = LoresPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03E34030197F132E005AA69F /* Build configuration list for PBXProject "LoresPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E3404F197F132E005AA69F /* Debug */,
+				03E34050197F132E005AA69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E34051197F132E005AA69F /* Build configuration list for PBXNativeTarget "LoresPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E34052197F132E005AA69F /* Debug */,
+				03E34053197F132E005AA69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03E3402D197F132E005AA69F /* Project object */;
+}
