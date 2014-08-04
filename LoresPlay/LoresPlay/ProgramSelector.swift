@@ -4,4 +4,5 @@ import Lores
 //let program = HelloPixelProgram()
 //let program = PebblesProgram()
 //let program = GravelProgram()
-let program = MoveProgram()
+//let program = MoveProgram()
+let program = BallProgram()
