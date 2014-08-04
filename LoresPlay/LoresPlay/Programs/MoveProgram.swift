@@ -1,6 +1,6 @@
 import Lores
 
-class MoveProgram : Program{
+class MoveProgram : Program {
     var p = Point(x: 0, y: 0)
 
     override func setup() {
