@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Arciem LLC. All rights reserved.
 //
 
-import Foundation
+import Arciem
 
 public struct Size : Printable {
     public let width: Int
@@ -21,5 +21,17 @@ public struct Size : Printable {
     get {
         return "Lores.Size(width:\(width) height:\(height))"
     }
+    }
+    
+    public func randomX() -> Int {
+        return random.randomInt(min: 0, max: width)
+    }
+    
+    public func randomY() -> Int {
+        return random.randomInt(min: 0, max: height)
+    }
+    
+    public func randomPoint() -> Point {
+        return Point(x: randomX(), y: randomY())
     }
 }

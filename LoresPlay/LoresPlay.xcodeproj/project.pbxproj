@@ -24,6 +24,7 @@
 		039375271989CBB80045D688 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039375261989CBB80045D688 /* UIKit.framework */; };
 		039375291989CBBD0045D688 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039375281989CBBD0045D688 /* QuartzCore.framework */; };
 		03E34042197F132E005AA69F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E34041197F132E005AA69F /* Images.xcassets */; };
+		0579D2E6198F1361006891D7 /* BallProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579D2E5198F1361006891D7 /* BallProgram.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		03E34041197F132E005AA69F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03E3404C197F132E005AA69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03E3404D197F132E005AA69F /* LoresPlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoresPlayTests.swift; sourceTree = "<group>"; };
+		0579D2E5198F1361006891D7 /* BallProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallProgram.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				03825F531989A93B001A526D /* PebblesProgram.swift */,
 				0353011F1989FCDC00879270 /* GravelProgram.swift */,
 				035301211989FD6200879270 /* MoveProgram.swift */,
+				0579D2E5198F1361006891D7 /* BallProgram.swift */,
 			);
 			name = Programs;
 			path = LoresPlay/Programs;
@@ -238,6 +241,7 @@
 				039375201989C9550045D688 /* HelloPixelProgram.swift in Sources */,
 				0393751F1989C9550045D688 /* EmptyProgram.swift in Sources */,
 				039375221989C9550045D688 /* AppDelegate.swift in Sources */,
+				0579D2E6198F1361006891D7 /* BallProgram.swift in Sources */,
 				035301201989FCDC00879270 /* GravelProgram.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

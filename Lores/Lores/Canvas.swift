@@ -160,14 +160,14 @@ public class Canvas {
     }
     
     public func randomX() -> Int {
-        return random.randomInt(min: 0, max: size.width)
+        return size.randomX()
     }
     
     public func randomY() -> Int {
-        return random.randomInt(min: 0, max: size.height)
+        return size.randomY()
     }
     
     public func randomPoint() -> Point {
-        return Point(x: randomX(), y: randomY())
+        return size.randomPoint()
     }
 }
