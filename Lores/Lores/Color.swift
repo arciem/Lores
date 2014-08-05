@@ -56,11 +56,11 @@ public struct Color : Printable {
         }
     }
     
-    public static func randomColor(alpha: Float = 1.0) -> Color {
+    public static func randomColor(random: Random = Random.sharedInstance, alpha: Float = 1.0) -> Color {
         return Color(
-            red: Float(Arciem.random.randomFlat()),
-            green: Float(Arciem.random.randomFlat()),
-            blue: Float(Arciem.random.randomFlat()),
+            red: random.randomFloat(),
+            green: random.randomFloat(),
+            blue: random.randomFloat(),
             alpha: alpha
         )
     }

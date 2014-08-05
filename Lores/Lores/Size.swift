@@ -24,11 +24,11 @@ public struct Size : Printable {
     }
     
     public func randomX() -> Int {
-        return random.randomInt(min: 0, max: width)
+        return Random.sharedInstance.randomInt(0..<width)
     }
     
     public func randomY() -> Int {
-        return random.randomInt(min: 0, max: height)
+        return Random.sharedInstance.randomInt(0..<height)
     }
     
     public func randomPoint() -> Point {

@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0B7FBB1AFA48E79F23311FC12F7834DAA3451C27</key>
-		<string>..Arciem/</string>
+		<string>..Arciem</string>
 		<key>25E4B6B07210DCBBD1476FF6D99F404370340583</key>
 		<string>..</string>
 	</dict>
@@ -36,17 +36,17 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>0B7FBB1AFA48E79F23311FC12F7834DAA3451C27</string>
+			<string>25E4B6B07210DCBBD1476FF6D99F404370340583</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Arciem</string>
+			<string>Lores</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>25E4B6B07210DCBBD1476FF6D99F404370340583</string>
+			<string>0B7FBB1AFA48E79F23311FC12F7834DAA3451C27</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Lores</string>
+			<string>LoresArciem</string>
 		</dict>
 	</array>
 </dict>

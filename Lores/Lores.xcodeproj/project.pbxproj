@@ -22,7 +22,6 @@
 		036D8FCF1989C669003FCB35 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E34064197F7873005AA69F /* ProgramView.swift */; };
 		036D8FD01989C682003FCB35 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03825F4319896C89001A526D /* Program.swift */; };
 		0579D2E8198F155F006891D7 /* Offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579D2E7198F155F006891D7 /* Offset.swift */; };
-		0579D2EA198F2783006891D7 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579D2E9198F2783006891D7 /* Random.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +43,6 @@
 		03E3400F197F1132005AA69F /* Lores-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lores-Bridging-Header.h"; sourceTree = "<group>"; };
 		03E34064197F7873005AA69F /* ProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramView.swift; sourceTree = "<group>"; };
 		0579D2E7198F155F006891D7 /* Offset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offset.swift; sourceTree = "<group>"; };
-		0579D2E9198F2783006891D7 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +92,6 @@
 				0579D2E7198F155F006891D7 /* Offset.swift */,
 				036608BD197F933500DCDBC6 /* Color.swift */,
 				03825F4319896C89001A526D /* Program.swift */,
-				0579D2E9198F2783006891D7 /* Random.swift */,
 				03E3400D197F1132005AA69F /* Supporting Files */,
 			);
 			path = Lores;
@@ -200,7 +197,6 @@
 			files = (
 				036D8FD01989C682003FCB35 /* Program.swift in Sources */,
 				0579D2E8198F155F006891D7 /* Offset.swift in Sources */,
-				0579D2EA198F2783006891D7 /* Random.swift in Sources */,
 				036D8FCE1989C666003FCB35 /* BackgroundView.swift in Sources */,
 				036D8FCF1989C669003FCB35 /* ProgramView.swift in Sources */,
 				036D8FC81989C222003FCB35 /* Point.swift in Sources */,

@@ -2,8 +2,12 @@
 
 import Lores
 
+//import class Arciem.Random
+import Arciem
+
+typealias Point = Lores.Point
+
 class BallProgram : Program {
-//    var ball = Ball(location: Point(x: 0, y: 0), direction: Offset(dx: 1, dy: 1), color: Color.Red)
     var balls = [Ball]()
     
     override func setup() {
@@ -13,7 +17,7 @@ class BallProgram : Program {
             let dx = Random.randomBoolean() ? 1 : -1
             let dy = Random.randomBoolean() ? 1 : -1
 
-            var ball = BallProgram.Ball(location: canvas.randomPoint(), direction: Offset(dx: dx, dy: dy), color: Color.randomColor())
+            let ball = BallProgram.Ball(location: canvas.randomPoint(), direction: Offset(dx: dx, dy: dy), color: Color.randomColor())
             balls.append(ball)
         }
     }
