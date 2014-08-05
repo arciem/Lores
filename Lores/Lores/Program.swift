@@ -19,7 +19,7 @@ public class Program {
     
     public private(set) var canvas: Canvas! {
     get {
-        if !_canvas {
+        if _canvas == nil {
             _canvas = Canvas(size: canvasSize)
         }
         return _canvas

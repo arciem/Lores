@@ -23,12 +23,12 @@ public class Canvas {
     private let planarFloatsCount: Int
     private let planarFloatsPerRow: Int
     
-    private let argb8Data: UnsafePointer<UInt8>
-    private let argb8PremultipliedData: UnsafePointer<UInt8>
-    private let alphaFData: UnsafePointer<Float>
-    private let redFData: UnsafePointer<Float>
-    private let greenFData: UnsafePointer<Float>
-    private let blueFData: UnsafePointer<Float>
+    private let argb8Data: UnsafeMutablePointer<UInt8>
+    private let argb8PremultipliedData: UnsafeMutablePointer<UInt8>
+    private let alphaFData: UnsafeMutablePointer<Float>
+    private let redFData: UnsafeMutablePointer<Float>
+    private let greenFData: UnsafeMutablePointer<Float>
+    private let blueFData: UnsafeMutablePointer<Float>
 
     private var argb8: vImage_Buffer
     private var argb8Premultiplied: vImage_Buffer
@@ -68,12 +68,12 @@ public class Canvas {
         planarFloatsPerRow = planarBytesPerRow >> 2
         planarFloatsCount = height * planarFloatsPerRow
 
-        argb8Data = UnsafePointer<UInt8>.alloc(chunkyBytesCount)
-        argb8PremultipliedData = UnsafePointer<UInt8>.alloc(chunkyBytesCount)
-        alphaFData = UnsafePointer<Float>.alloc(planarFloatsCount)
-        redFData = UnsafePointer<Float>.alloc(planarFloatsCount)
-        greenFData = UnsafePointer<Float>.alloc(planarFloatsCount)
-        blueFData = UnsafePointer<Float>.alloc(planarFloatsCount)
+        argb8Data = UnsafeMutablePointer<UInt8>.alloc(chunkyBytesCount)
+        argb8PremultipliedData = UnsafeMutablePointer<UInt8>.alloc(chunkyBytesCount)
+        alphaFData = UnsafeMutablePointer<Float>.alloc(planarFloatsCount)
+        redFData = UnsafeMutablePointer<Float>.alloc(planarFloatsCount)
+        greenFData = UnsafeMutablePointer<Float>.alloc(planarFloatsCount)
+        blueFData = UnsafeMutablePointer<Float>.alloc(planarFloatsCount)
 
         argb8 = vImage_Buffer(data: argb8Data, height: UInt(height), width: UInt(width), rowBytes: UInt(chunkyBytesPerRow))
         argb8Premultiplied = vImage_Buffer(data: argb8PremultipliedData, height: UInt(height), width: UInt(width), rowBytes: UInt(chunkyBytesPerRow))
@@ -103,14 +103,14 @@ public class Canvas {
     
     public var image: UIImage {
     get {
-        if !self._image {
+        if self._image == nil {
             var error = vImageConvert_PlanarFToARGB8888(&alphaF, &redF, &greenF, &blueF, &argb8, &maxPixelValues, &minPixelValues, UInt32(kvImageNoFlags))
             assert(error == kvImageNoError, "Error when converting canvas to chunky")
             error = vImagePremultiplyData_ARGB8888(&argb8, &argb8Premultiplied, UInt32(kvImageNoFlags))
             assert(error == kvImageNoError, "Error when premultiplying canvas")
             let cgImage = CGBitmapContextCreateImage(self.context)
             self._image = UIImage(CGImage: cgImage)
-            assert(self._image, "Error when converting")
+            assert(self._image != nil, "Error when converting")
         }
         return self._image!
     }
