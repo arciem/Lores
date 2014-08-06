@@ -29,8 +29,8 @@ public struct Color : Printable {
     }
     
     public init(var hue h: Float, var saturation s: Float, var brightness v: Float, alpha a: Float = 1.0) {
-        v = clamp(v, min: 0.0, max: 1.0)
-        s = clamp(s, min: 0.0, max: 1.0)
+        v = clamp(v, 0.0...1.0)
+        s = clamp(s, 0.0...1.0)
         red = v
         green = v
         blue = v
