@@ -54,6 +54,7 @@ public class Program {
                 c.canceled = true
             }
             let interval = NSTimeInterval(Float(1.0) / _framesPerSecond)
+            println("interval:\(interval)")
             canceler = dispatchRepeatedOnBackground(atInterval: interval) { [unowned self] canceler in
                 self.serializer.dispatch() {
                     self._update()

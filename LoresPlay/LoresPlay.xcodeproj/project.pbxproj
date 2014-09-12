@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		0336F3FB1989CF9700365893 /* Arciem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Arciem.framework; path = "../../../Library/Developer/Xcode/DerivedData/Lores-enknurcmdmfrzreefhmdpcrdeqsf/Build/Products/Debug-iphoneos/Arciem.framework"; sourceTree = "<group>"; };
 		0336F3FC1989CF9700365893 /* Lores.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lores.framework; path = "../../../Library/Developer/Xcode/DerivedData/Lores-enknurcmdmfrzreefhmdpcrdeqsf/Build/Products/Debug-iphoneos/Lores.framework"; sourceTree = "<group>"; };
+		0336F63419BC0932000E0E70 /* LoresPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LoresPlayground.playground; sourceTree = "<group>"; };
 		0353011F1989FCDC00879270 /* GravelProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravelProgram.swift; sourceTree = "<group>"; };
 		035301211989FD6200879270 /* MoveProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveProgram.swift; sourceTree = "<group>"; };
 		036608B3197F815900DCDBC6 /* Lores.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Lores.xcassets; path = ../../Lores/Lores/Lores.xcassets; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 		03E3402C197F132E005AA69F = {
 			isa = PBXGroup;
 			children = (
+				0336F63419BC0932000E0E70 /* LoresPlayground.playground */,
 				03825F4519897299001A526D /* Programs */,
 				03E34037197F132E005AA69F /* LoresPlay */,
 				03E3404A197F132E005AA69F /* LoresPlayTests */,
@@ -344,9 +346,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = LoresPlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};

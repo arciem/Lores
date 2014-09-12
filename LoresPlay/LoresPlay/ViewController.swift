@@ -8,6 +8,9 @@
 
 import UIKit
 import Lores
+import Arciem
+
+let debugKey: NSString = "DebugKey"
 
 class ViewController: UIViewController {
     @IBOutlet weak var programView: ProgramView!
@@ -17,7 +20,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad();
+        super.viewDidLoad()
         programView.program = program
         programView.program.didDisplay = {
             self.programView.flush()
@@ -29,4 +32,3 @@ class ViewController: UIViewController {
         programView.program.display()
     }
 }
-

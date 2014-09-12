@@ -15,6 +15,8 @@ public class ProgramView: CView {
 
     override public func setup() {
         super.setup()
+
+        layer.magnificationFilter = kCAFilterNearest
         
         addBackgroundView()
         addCanvasView()

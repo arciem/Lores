@@ -2,4 +2,52 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Arciem/Arciem/BigNum.swift"
+            timestampString = "429771287.887798"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "add(lhs:rhs:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Arciem.BigNum.add (Arciem.BigNum.Type)(lhs : Arciem.BigNum, rhs : Arciem.BigNum) -&gt; Arciem.BigNum"
+                  moduleName = "Arciem"
+                  urlString = "file:///Users/ironwolf/DevProjects/Lores/Arciem/Arciem/BigNum.swift"
+                  timestampString = "429770603.455446"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1762">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Arciem.BigNum.add (Arciem.BigNum.Type)(lhs : Arciem.BigNum, rhs : Arciem.BigNum) -&gt; Arciem.BigNum"
+                  moduleName = "Arciem"
+                  urlString = "file:///Users/ironwolf/DevProjects/Lores/Arciem/Arciem/BigNum.swift"
+                  timestampString = "429770603.455673"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1889">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
