@@ -54,7 +54,6 @@ public class Program {
                 c.canceled = true
             }
             let interval = NSTimeInterval(Float(1.0) / _framesPerSecond)
-            println("interval:\(interval)")
             canceler = dispatchRepeatedOnBackground(atInterval: interval) { [unowned self] canceler in
                 self.serializer.dispatch() {
                     self._update()
@@ -101,4 +100,9 @@ public class Program {
     public func setup() { }
     public func update() { }
     public func draw() { }
+    
+    public func touchBeganAtPoint(point: Point) { }
+    public func touchMovedAtPoint(point: Point) { }
+    public func touchEndedAtPoint(point: Point) { }
+    public func touchCancelledAtPoint(point: Point) { }
 }

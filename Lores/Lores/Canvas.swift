@@ -82,7 +82,7 @@ public class Canvas {
         greenF = vImage_Buffer(data: greenFData, height: UInt(height), width: UInt(width), rowBytes: UInt(planarBytesPerRow))
         blueF = vImage_Buffer(data: blueFData, height: UInt(height), width: UInt(width), rowBytes: UInt(planarBytesPerRow))
 
-        let bitmapInfo = CGBitmapInfo.fromRaw(CGImageAlphaInfo.PremultipliedFirst.toRaw())!
+        let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.PremultipliedFirst.rawValue)
         context = CGBitmapContextCreate(argb8PremultipliedData, UInt(width), UInt(height), UInt(chunkyBitsPerComponent), UInt(chunkyBytesPerRow), colorSpace, bitmapInfo)
         
         //println("width:\(width) height:\(height) componentsPerPixel:\(componentsPerPixel) chunkyBytesPerComponent:\(chunkyBytesPerComponent) chunkyBitsPerComponent:\(chunkyBitsPerComponent) chunkyBytesPerPixel:\(chunkyBytesPerPixel) chunkyBytesPerRow:\(chunkyBytesPerRow) chunkyBytesCount:\(chunkyBytesCount)")
@@ -120,11 +120,19 @@ public class Canvas {
         self._image = nil
     }
     
+    public func isValidPoint(p: Point) -> Bool {
+        return p.x >= 0 && p.y >= 0 && p.x < Int(alphaF.width) && p.y < Int(alphaF.height)
+    }
+    
+    public func clampPoint(p: Point) -> Point {
+        return Point(x: min(max(p.x, minX), maxX), y: min(max(p.y, minY), maxY))
+    }
+    
     private func checkPoint(point: Point) {
-        assert(point.x >= 0, "x must be >= 0")
-        assert(point.y >= 0, "y must be >= 0")
-        assert(point.x < Int(alphaF.width), "x must be < width")
-        assert(point.y < Int(alphaF.height), "y must be < height")
+        assert(point.x >= minX, "x must be >= 0")
+        assert(point.y >= minY, "y must be >= 0")
+        assert(point.x <= maxX, "x must be < width")
+        assert(point.y <= maxY, "y must be < height")
     }
     
     private func offsetForPoint(point: Point) -> Int {

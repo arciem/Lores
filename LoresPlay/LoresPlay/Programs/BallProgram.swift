@@ -20,8 +20,6 @@ class BallProgram : Program {
             let ball = BallProgram.Ball(location: canvas.randomPoint(), direction: Offset(dx: dx, dy: dy), color: Color.randomColor())
             balls.append(ball)
         }
-        
-//        testBigNum()
     }
     
     override func update() {
