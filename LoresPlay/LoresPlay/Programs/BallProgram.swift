@@ -1,8 +1,4 @@
-//  Created by Bevan Essman on 8/3/14.
-
 import Lores
-
-//import class Arciem.Random
 import Arciem
 
 typealias Point = Lores.Point
@@ -70,6 +66,11 @@ class BallProgram : Program {
             
             location = Point(x: newX, y: newY)
             direction = Offset(dx: newDX, dy: newDY)
+
+            let stringArray = [ "Bob", "Frank", "Anne" ]
+            var sortedStrings = sorted(stringArray) {
+                $0.uppercaseString < $1.uppercaseString
+            }
         }
         
         func draw(canvas: Canvas) {

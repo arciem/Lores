@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0336F3FD1989CF9700365893 /* Arciem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F3FB1989CF9700365893 /* Arciem.framework */; };
-		0336F3FF1989CFDA00365893 /* Lores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F3FC1989CF9700365893 /* Lores.framework */; };
 		0353011E1989F3E800879270 /* ProgramSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03825F4A198996ED001A526D /* ProgramSelector.swift */; };
 		035301201989FCDC00879270 /* GravelProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0353011F1989FCDC00879270 /* GravelProgram.swift */; };
 		035301221989FD6200879270 /* MoveProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035301211989FD6200879270 /* MoveProgram.swift */; };
 		036608B4197F815900DCDBC6 /* Lores.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036608B3197F815900DCDBC6 /* Lores.xcassets */; };
 		03826F2F1988724400704E30 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03826F2E1988724400704E30 /* Accelerate.framework */; };
+		0388AAB219DA7A0C00DDBA3E /* Arciem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F3FB1989CF9700365893 /* Arciem.framework */; };
+		0388AAB319DA7A0C00DDBA3E /* Arciem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F3FB1989CF9700365893 /* Arciem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0388AAB719DA7A2700DDBA3E /* Lores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F3FC1989CF9700365893 /* Lores.framework */; };
+		0388AAB819DA7A2700DDBA3E /* Lores.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F3FC1989CF9700365893 /* Lores.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0392A4121989C8750045F35B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E3403E197F132E005AA69F /* Main.storyboard */; };
 		0393751F1989C9550045D688 /* EmptyProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03825F501989A093001A526D /* EmptyProgram.swift */; };
 		039375201989C9550045D688 /* HelloPixelProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03825F46198972BB001A526D /* HelloPixelProgram.swift */; };
@@ -27,9 +29,24 @@
 		0579D2E6198F1361006891D7 /* BallProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579D2E5198F1361006891D7 /* BallProgram.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0388AAB419DA7A0C00DDBA3E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0388AAB819DA7A2700DDBA3E /* Lores.framework in Embed Frameworks */,
+				0388AAB319DA7A0C00DDBA3E /* Arciem.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0336F3FB1989CF9700365893 /* Arciem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Arciem.framework; path = "../../../Library/Developer/Xcode/DerivedData/Lores-enknurcmdmfrzreefhmdpcrdeqsf/Build/Products/Debug-iphoneos/Arciem.framework"; sourceTree = "<group>"; };
-		0336F3FC1989CF9700365893 /* Lores.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lores.framework; path = "../../../Library/Developer/Xcode/DerivedData/Lores-enknurcmdmfrzreefhmdpcrdeqsf/Build/Products/Debug-iphoneos/Lores.framework"; sourceTree = "<group>"; };
+		0336F3FB1989CF9700365893 /* Arciem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Arciem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0336F3FC1989CF9700365893 /* Lores.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lores.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0336F63419BC0932000E0E70 /* LoresPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LoresPlayground.playground; sourceTree = "<group>"; };
 		0353011F1989FCDC00879270 /* GravelProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravelProgram.swift; sourceTree = "<group>"; };
 		035301211989FD6200879270 /* MoveProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveProgram.swift; sourceTree = "<group>"; };
@@ -61,10 +78,10 @@
 			files = (
 				039375251989CBAE0045D688 /* Foundation.framework in Frameworks */,
 				039375271989CBB80045D688 /* UIKit.framework in Frameworks */,
+				0388AAB219DA7A0C00DDBA3E /* Arciem.framework in Frameworks */,
 				039375291989CBBD0045D688 /* QuartzCore.framework in Frameworks */,
+				0388AAB719DA7A2700DDBA3E /* Lores.framework in Frameworks */,
 				03826F2F1988724400704E30 /* Accelerate.framework in Frameworks */,
-				0336F3FD1989CF9700365893 /* Arciem.framework in Frameworks */,
-				0336F3FF1989CFDA00365893 /* Lores.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +193,7 @@
 				03E34031197F132E005AA69F /* Sources */,
 				03E34032197F132E005AA69F /* Frameworks */,
 				03E34033197F132E005AA69F /* Resources */,
+				0388AAB419DA7A0C00DDBA3E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,6 +364,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Lores-enknurcmdmfrzreefhmdpcrdeqsf/Build/Products/Debug-iphoneos",
+				);
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = LoresPlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -359,6 +381,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Lores-enknurcmdmfrzreefhmdpcrdeqsf/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = LoresPlay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
