@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Point : Printable {
+public struct Point : CustomStringConvertible {
     public let x: Int
     public let y: Int
     

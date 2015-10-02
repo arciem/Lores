@@ -8,7 +8,7 @@
 
 import Arciem
 
-public struct Size : Printable {
+public struct Size : CustomStringConvertible {
     public let width: Int
     public let height: Int
     

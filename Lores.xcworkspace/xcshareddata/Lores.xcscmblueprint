@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "25E4B6B07210DCBBD1476FF6D99F404370340583",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "25E4B6B07210DCBBD1476FF6D99F404370340583" : 0,
+    "0B7FBB1AFA48E79F23311FC12F7834DAA3451C27" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3BD4802A-49EC-401A-8938-714B6E732BA9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "25E4B6B07210DCBBD1476FF6D99F404370340583" : "Lores",
+    "0B7FBB1AFA48E79F23311FC12F7834DAA3451C27" : "LoresArciem"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Lores",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Lores.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:arciem\/Arciem.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0B7FBB1AFA48E79F23311FC12F7834DAA3451C27"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:arciem\/Lores.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "25E4B6B07210DCBBD1476FF6D99F404370340583"
+    }
+  ]
+}

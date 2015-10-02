@@ -17,6 +17,7 @@ public class ProgramView: CView {
         super.setup()
 
         layer.magnificationFilter = kCAFilterNearest
+        backgroundColor = UIColor.greenColor()
         
         addBackgroundView()
         addCanvasView()
@@ -54,8 +55,8 @@ public class ProgramView: CView {
     
     func canvasPointForCanvasViewPoint(point: CGPoint) -> Point {
         let canvasImageSize = self.program.canvas.image.size
-        let canvasImageSizeScaled = canvasImageSize.aspectFitWithin(size: self.canvasView.bounds.size)
-        let canvasImageFrame = CGRect(origin: CGPoint.zeroPoint, size: canvasImageSizeScaled).rectBySettingMid(self.canvasView.bounds.mid)
+        let canvasImageSizeScaled = canvasImageSize.aspectFitWithinSize(self.canvasView.bounds.size)
+        let canvasImageFrame = CGRect(origin: CGPoint.zero, size: canvasImageSizeScaled).rectBySettingMid(self.canvasView.bounds.mid)
         let fx = Math.map(point.x, canvasImageFrame.minX, canvasImageFrame.maxX, CGFloat(0), canvasImageSize.width)
         let fy = Math.map(point.y, canvasImageFrame.minY, canvasImageFrame.maxY, CGFloat(0), canvasImageSize.height)
         let x = Int(floor(fx))

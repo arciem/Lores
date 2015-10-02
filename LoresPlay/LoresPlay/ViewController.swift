@@ -2,15 +2,12 @@
 //  ViewController.swift
 //  LoresPlay
 //
-//  Created by Robert McNally on 7/22/14.
-//  Copyright (c) 2014 Arciem LLC. All rights reserved.
+//  Created by Robert McNally on 10/1/15.
+//  Copyright © 2015 Arciem LLC. All rights reserved.
 //
 
 import UIKit
 import Lores
-import Arciem
-
-let debugKey: NSString = "DebugKey"
 
 class ViewController: UIViewController {
     @IBOutlet weak var programView: ProgramView!
@@ -18,7 +15,7 @@ class ViewController: UIViewController {
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         programView.program = program
@@ -31,4 +28,6 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         programView.program.display()
     }
+
 }
+

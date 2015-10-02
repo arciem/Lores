@@ -24,31 +24,31 @@ class CanvasView : CImageView {
     }
     
     override func didMoveToSuperview() {
-        if let sv = superview {
+        if superview != nil {
             constrainToSuperview()
         }
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        let touch = touches.anyObject() as UITouch
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        let touch = touches.first!
         let loc = touch.locationInView(self)
         touchBegan?(point: loc)
     }
     
-    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
-        let touch = touches.anyObject() as UITouch
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        let touch = touches.first!
         let loc = touch.locationInView(self)
         touchMoved?(point: loc)
     }
     
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        let touch = touches.anyObject() as UITouch
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        let touch = touches.first!
         let loc = touch.locationInView(self)
         touchEnded?(point: loc)
     }
     
-    override func touchesCancelled(touches: NSSet!, withEvent event: UIEvent!) {
-        let touch = touches.anyObject() as UITouch
+    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
+        let touch = touches!.first!
         let loc = touch.locationInView(self)
         touchCancelled?(point: loc)
     }

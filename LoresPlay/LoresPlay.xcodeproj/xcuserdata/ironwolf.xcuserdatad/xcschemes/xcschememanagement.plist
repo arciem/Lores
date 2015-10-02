@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>LoresPlay.xcscheme_^#shared#^_</key>
+		<key>LoresPlay.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03E34034197F132E005AA69F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>03E34046197F132E005AA69F</key>
+		<key>032334311BBDFB21002D3C03</key>
 		<dict>
 			<key>primary</key>
 			<true/>

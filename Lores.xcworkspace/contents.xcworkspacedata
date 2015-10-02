@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:LoresPlay/LoresPlay.xcodeproj">
+      location = "container:LoresPlay/LoresPlay.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Lores/Lores.xcodeproj">
+      location = "container:Lores/Lores.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Arciem/Arciem.xcodeproj">
+      location = "container:Arciem/Arciem.xcodeproj">
    </FileRef>
 </Workspace>

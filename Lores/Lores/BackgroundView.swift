@@ -13,11 +13,12 @@ class BackgroundView : CImageView {
         super.setup()
         
         contentMode = .ScaleAspectFill
-        image = UIImage(named: "Stars.jpg")
+        image = UIImage(named: "Stars.jpg", inBundle: NSBundle(identifier: "com.arciem.Lores"), compatibleWithTraitCollection: nil)
+        backgroundColor = UIColor.blueColor()
     }
     
     override func didMoveToSuperview() {
-        if let sv = superview {
+        if superview != nil {
             constrainToSuperview()
         }
     }

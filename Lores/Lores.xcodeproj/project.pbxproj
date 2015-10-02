@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0323340A1BBD9044002D3C03 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036608BD197F933500DCDBC6 /* Color.swift */; };
 		0336F3FA1989CF7400365893 /* Arciem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F3F91989CF7400365893 /* Arciem.framework */; };
 		0336F4011989CFF900365893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F4001989CFF900365893 /* Foundation.framework */; };
 		0336F4031989D00100365893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F4021989D00100365893 /* UIKit.framework */; };
 		036D8FB41989BF42003FCB35 /* Lores.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036608B1197F815300DCDBC6 /* Lores.xcassets */; };
 		036D8FBE1989BFBB003FCB35 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03826F2C1988723400704E30 /* Accelerate.framework */; };
 		036D8FBF1989BFBB003FCB35 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036608B5197F81E400DCDBC6 /* QuartzCore.framework */; };
-		036D8FC71989C212003FCB35 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036608BD197F933500DCDBC6 /* Color.swift */; };
 		036D8FC81989C222003FCB35 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036608BB197F85A300DCDBC6 /* Point.swift */; };
 		036D8FC91989C227003FCB35 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036608B9197F855100DCDBC6 /* Size.swift */; };
 		036D8FCA1989C22F003FCB35 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036608B7197F852F00DCDBC6 /* Canvas.swift */; };
@@ -154,7 +154,9 @@
 		03E34001197F1132005AA69F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Arciem LLC";
 				TargetAttributes = {
 					036D8F9A1989BEF9003FCB35 = {
@@ -202,8 +204,8 @@
 				036D8FC81989C222003FCB35 /* Point.swift in Sources */,
 				036D8FC91989C227003FCB35 /* Size.swift in Sources */,
 				036D8FCB1989C23A003FCB35 /* CanvasView.swift in Sources */,
-				036D8FC71989C212003FCB35 /* Color.swift in Sources */,
 				036D8FCA1989C22F003FCB35 /* Canvas.swift in Sources */,
+				0323340A1BBD9044002D3C03 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,8 +227,9 @@
 				);
 				INFOPLIST_FILE = Lores/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arciem.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Lores/Lores-Bridging-Header.h";
@@ -244,8 +247,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Lores/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arciem.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Lores/Lores-Bridging-Header.h";
@@ -273,6 +277,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;

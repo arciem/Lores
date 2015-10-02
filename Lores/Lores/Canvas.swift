@@ -75,15 +75,19 @@ public class Canvas {
         greenFData = UnsafeMutablePointer<Float>.alloc(planarFloatsCount)
         blueFData = UnsafeMutablePointer<Float>.alloc(planarFloatsCount)
 
-        argb8 = vImage_Buffer(data: argb8Data, height: UInt(height), width: UInt(width), rowBytes: UInt(chunkyBytesPerRow))
-        argb8Premultiplied = vImage_Buffer(data: argb8PremultipliedData, height: UInt(height), width: UInt(width), rowBytes: UInt(chunkyBytesPerRow))
-        alphaF = vImage_Buffer(data: alphaFData, height: UInt(height), width: UInt(width), rowBytes: UInt(planarBytesPerRow))
-        redF = vImage_Buffer(data: redFData, height: UInt(height), width: UInt(width), rowBytes: UInt(planarBytesPerRow))
-        greenF = vImage_Buffer(data: greenFData, height: UInt(height), width: UInt(width), rowBytes: UInt(planarBytesPerRow))
-        blueF = vImage_Buffer(data: blueFData, height: UInt(height), width: UInt(width), rowBytes: UInt(planarBytesPerRow))
+        let uWidth = vImagePixelCount(width)
+        let uHeight = vImagePixelCount(height)
+        
+//        argb8 = vImage_Buffer(data: argb8Data, height: uHeight, width: uWidth, rowBytes: chunkyBytesPerRow)
+        argb8 = vImage_Buffer(data: argb8Data, height: vImagePixelCount(height), width: uWidth, rowBytes: chunkyBytesPerRow)
+        argb8Premultiplied = vImage_Buffer(data: argb8PremultipliedData, height: uHeight, width: uWidth, rowBytes: chunkyBytesPerRow)
+        alphaF = vImage_Buffer(data: alphaFData, height: uHeight, width: uWidth, rowBytes: planarBytesPerRow)
+        redF = vImage_Buffer(data: redFData, height: uHeight, width: uWidth, rowBytes: planarBytesPerRow)
+        greenF = vImage_Buffer(data: greenFData, height: uHeight, width: uWidth, rowBytes: planarBytesPerRow)
+        blueF = vImage_Buffer(data: blueFData, height: uHeight, width: uWidth, rowBytes: planarBytesPerRow)
 
         let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.PremultipliedFirst.rawValue)
-        context = CGBitmapContextCreate(argb8PremultipliedData, UInt(width), UInt(height), UInt(chunkyBitsPerComponent), UInt(chunkyBytesPerRow), colorSpace, bitmapInfo)
+        context = CGBitmapContextCreate(argb8PremultipliedData, width, height, chunkyBitsPerComponent, chunkyBytesPerRow, colorSpace, bitmapInfo.rawValue)!
         
         //println("width:\(width) height:\(height) componentsPerPixel:\(componentsPerPixel) chunkyBytesPerComponent:\(chunkyBytesPerComponent) chunkyBitsPerComponent:\(chunkyBitsPerComponent) chunkyBytesPerPixel:\(chunkyBytesPerPixel) chunkyBytesPerRow:\(chunkyBytesPerRow) chunkyBytesCount:\(chunkyBytesCount)")
 
@@ -109,7 +113,7 @@ public class Canvas {
             error = vImagePremultiplyData_ARGB8888(&argb8, &argb8Premultiplied, UInt32(kvImageNoFlags))
             assert(error == kvImageNoError, "Error when premultiplying canvas")
             let cgImage = CGBitmapContextCreateImage(self.context)
-            self._image = UIImage(CGImage: cgImage)
+            self._image = UIImage(CGImage: cgImage!)
             assert(self._image != nil, "Error when converting")
         }
         return self._image!

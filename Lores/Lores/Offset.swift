@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Arciem LLC. All rights reserved.
 //
 
-public struct Offset : Printable {
+public struct Offset : CustomStringConvertible {
     public let dx: Int
     public let dy: Int
     

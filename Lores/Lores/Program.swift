@@ -50,8 +50,8 @@ public class Program {
     set {
         if _framesPerSecond != newValue {
             _framesPerSecond = newValue
-            if let c = canceler {
-                c.canceled = true
+            if let canceler = canceler {
+                canceler.isCanceled = true
             }
             let interval = NSTimeInterval(Float(1.0) / _framesPerSecond)
             canceler = dispatchRepeatedOnBackground(atInterval: interval) { [unowned self] canceler in

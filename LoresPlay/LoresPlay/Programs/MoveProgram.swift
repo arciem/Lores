@@ -12,7 +12,7 @@ class MoveProgram : Program {
     }
     
     override func update() {
-        var newx = redPosition.x + redDirection
+        let newx = redPosition.x + redDirection
         if newx == canvas.maxX {
             redDirection = -1
         } else if newx == 0 {
@@ -20,7 +20,7 @@ class MoveProgram : Program {
         }
         redPosition = Point(x: newx, y: canvas.midY)
 
-        var newy = bluePosition.y + blueDirection
+        let newy = bluePosition.y + blueDirection
         if newy == canvas.maxY {
             blueDirection = -1
         } else if newy == 0 {
