@@ -43,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		0313CF431BDC24FC00531143 /* MyProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProgram.swift; sourceTree = "<group>"; };
+		0313CF461BDC392100531143 /* LoresPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = LoresPlayground.playground; path = ../LoresPlayground.playground; sourceTree = "<group>"; };
 		032334321BBDFB21002D3C03 /* LoresPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoresPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		032334351BBDFB21002D3C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		032334371BBDFB21002D3C03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		0313CF421BDC24B200531143 /* App Support */ = {
 			isa = PBXGroup;
 			children = (
+				0323345E1BBE07B4002D3C03 /* Lores.framework */,
 				032334351BBDFB21002D3C03 /* AppDelegate.swift */,
 				032334371BBDFB21002D3C03 /* ViewController.swift */,
 				032334391BBDFB21002D3C03 /* Main.storyboard */,
@@ -99,7 +101,7 @@
 		032334291BBDFB21002D3C03 = {
 			isa = PBXGroup;
 			children = (
-				0323345E1BBE07B4002D3C03 /* Lores.framework */,
+				0313CF461BDC392100531143 /* LoresPlayground.playground */,
 				032334341BBDFB21002D3C03 /* LoresPlay */,
 				032334331BBDFB21002D3C03 /* Products */,
 			);
