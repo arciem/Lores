@@ -13,8 +13,8 @@ class BackgroundView : CImageView {
         super.setup()
         
         contentMode = .ScaleAspectFill
-        image = UIImage(named: "Stars.jpg", inBundle: NSBundle(identifier: "com.arciem.Lores"), compatibleWithTraitCollection: nil)
-        backgroundColor = UIColor.blueColor()
+        image = UIImage(named: "BlackLeather.jpg", inBundle: NSBundle(identifier: "com.arciem.Lores"), compatibleWithTraitCollection: nil)
+        backgroundColor = UIColor.blackColor()
     }
     
     override func didMoveToSuperview() {

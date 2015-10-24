@@ -4,11 +4,13 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BE6F11D2B0F7EBDD3A2A4B2F7B7F7393B556F9B2" : 0,
     "25E4B6B07210DCBBD1476FF6D99F404370340583" : 0,
     "0B7FBB1AFA48E79F23311FC12F7834DAA3451C27" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3BD4802A-49EC-401A-8938-714B6E732BA9",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BE6F11D2B0F7EBDD3A2A4B2F7B7F7393B556F9B2" : "Lores\/Arciem\/deps\/Reachability\/",
     "25E4B6B07210DCBBD1476FF6D99F404370340583" : "Lores",
     "0B7FBB1AFA48E79F23311FC12F7834DAA3451C27" : "LoresArciem"
   },
@@ -25,6 +27,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:arciem\/Lores.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "25E4B6B07210DCBBD1476FF6D99F404370340583"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:arciem\/Reachability.swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BE6F11D2B0F7EBDD3A2A4B2F7B7F7393B556F9B2"
     }
   ]
 }

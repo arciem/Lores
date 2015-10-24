@@ -7,7 +7,7 @@ class BallProgram : Program {
     var balls = [Ball]()
     
     override func setup() {
-        framesPerSecond = 20
+        framesPerSecond = 30
         
         for _ in 1...20  {
             let dx = Random.randomBoolean() ? 1 : -1

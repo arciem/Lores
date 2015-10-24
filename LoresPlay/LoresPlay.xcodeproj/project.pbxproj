@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0313CF441BDC24FC00531143 /* MyProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313CF431BDC24FC00531143 /* MyProgram.swift */; };
 		032334361BBDFB21002D3C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334351BBDFB21002D3C03 /* AppDelegate.swift */; };
 		032334381BBDFB21002D3C03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334371BBDFB21002D3C03 /* ViewController.swift */; };
 		0323343B1BBDFB21002D3C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032334391BBDFB21002D3C03 /* Main.storyboard */; };
 		0323343D1BBDFB21002D3C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0323343C1BBDFB21002D3C03 /* Assets.xcassets */; };
 		032334401BBDFB21002D3C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0323343E1BBDFB21002D3C03 /* LaunchScreen.storyboard */; };
-		032334531BBE0534002D3C03 /* BallProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323344C1BBE0534002D3C03 /* BallProgram.swift */; };
-		032334541BBE0534002D3C03 /* EmptyProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323344D1BBE0534002D3C03 /* EmptyProgram.swift */; };
-		032334551BBE0534002D3C03 /* GravelProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323344E1BBE0534002D3C03 /* GravelProgram.swift */; };
-		032334561BBE0534002D3C03 /* HelloPixelProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323344F1BBE0534002D3C03 /* HelloPixelProgram.swift */; };
-		032334571BBE0534002D3C03 /* MoveProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334501BBE0534002D3C03 /* MoveProgram.swift */; };
-		032334581BBE0534002D3C03 /* PebblesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334511BBE0534002D3C03 /* PebblesProgram.swift */; };
+		032334531BBE0534002D3C03 /* 006-BallProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323344C1BBE0534002D3C03 /* 006-BallProgram.swift */; };
+		032334541BBE0534002D3C03 /* 001-EmptyProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323344D1BBE0534002D3C03 /* 001-EmptyProgram.swift */; };
+		032334551BBE0534002D3C03 /* 004-GravelProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323344E1BBE0534002D3C03 /* 004-GravelProgram.swift */; };
+		032334561BBE0534002D3C03 /* 002-HelloPixelProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323344F1BBE0534002D3C03 /* 002-HelloPixelProgram.swift */; };
+		032334571BBE0534002D3C03 /* 005-MoveProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334501BBE0534002D3C03 /* 005-MoveProgram.swift */; };
+		032334581BBE0534002D3C03 /* 003-PebblesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334511BBE0534002D3C03 /* 003-PebblesProgram.swift */; };
 		032334591BBE0534002D3C03 /* ProgramSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334521BBE0534002D3C03 /* ProgramSelector.swift */; };
 		0323345F1BBE07B4002D3C03 /* Lores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0323345E1BBE07B4002D3C03 /* Lores.framework */; };
 		032334601BBE07B4002D3C03 /* Lores.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0323345E1BBE07B4002D3C03 /* Lores.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -41,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0313CF431BDC24FC00531143 /* MyProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProgram.swift; sourceTree = "<group>"; };
 		032334321BBDFB21002D3C03 /* LoresPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoresPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		032334351BBDFB21002D3C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		032334371BBDFB21002D3C03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,12 +50,12 @@
 		0323343C1BBDFB21002D3C03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0323343F1BBDFB21002D3C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		032334411BBDFB21002D3C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0323344C1BBE0534002D3C03 /* BallProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallProgram.swift; sourceTree = "<group>"; };
-		0323344D1BBE0534002D3C03 /* EmptyProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyProgram.swift; sourceTree = "<group>"; };
-		0323344E1BBE0534002D3C03 /* GravelProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravelProgram.swift; sourceTree = "<group>"; };
-		0323344F1BBE0534002D3C03 /* HelloPixelProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloPixelProgram.swift; sourceTree = "<group>"; };
-		032334501BBE0534002D3C03 /* MoveProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveProgram.swift; sourceTree = "<group>"; };
-		032334511BBE0534002D3C03 /* PebblesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PebblesProgram.swift; sourceTree = "<group>"; };
+		0323344C1BBE0534002D3C03 /* 006-BallProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "006-BallProgram.swift"; sourceTree = "<group>"; };
+		0323344D1BBE0534002D3C03 /* 001-EmptyProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "001-EmptyProgram.swift"; sourceTree = "<group>"; };
+		0323344E1BBE0534002D3C03 /* 004-GravelProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "004-GravelProgram.swift"; sourceTree = "<group>"; };
+		0323344F1BBE0534002D3C03 /* 002-HelloPixelProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "002-HelloPixelProgram.swift"; sourceTree = "<group>"; };
+		032334501BBE0534002D3C03 /* 005-MoveProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "005-MoveProgram.swift"; sourceTree = "<group>"; };
+		032334511BBE0534002D3C03 /* 003-PebblesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "003-PebblesProgram.swift"; sourceTree = "<group>"; };
 		032334521BBE0534002D3C03 /* ProgramSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramSelector.swift; sourceTree = "<group>"; };
 		0323345E1BBE07B4002D3C03 /* Lores.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Lores.framework; path = "/Users/ironwolf/Library/Developer/Xcode/DerivedData/Lores-gypyzzxvaebephedzahthhaakdkt/Build/Products/Debug-iphoneos/Lores.framework"; sourceTree = "<absolute>"; };
 		0336F3F91989CF7400365893 /* Arciem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Arciem.framework; path = "../../../Library/Developer/Xcode/DerivedData/Lores-enknurcmdmfrzreefhmdpcrdeqsf/Build/Products/Debug-iphoneos/Arciem.framework"; sourceTree = "<group>"; };
@@ -72,6 +74,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0313CF411BDC23E400531143 /* Student Programs */ = {
+			isa = PBXGroup;
+			children = (
+				0313CF431BDC24FC00531143 /* MyProgram.swift */,
+			);
+			name = "Student Programs";
+			path = "Programs/Student Programs";
+			sourceTree = "<group>";
+		};
+		0313CF421BDC24B200531143 /* App Support */ = {
+			isa = PBXGroup;
+			children = (
+				032334351BBDFB21002D3C03 /* AppDelegate.swift */,
+				032334371BBDFB21002D3C03 /* ViewController.swift */,
+				032334391BBDFB21002D3C03 /* Main.storyboard */,
+				0323343C1BBDFB21002D3C03 /* Assets.xcassets */,
+				0323343E1BBDFB21002D3C03 /* LaunchScreen.storyboard */,
+				032334411BBDFB21002D3C03 /* Info.plist */,
+			);
+			name = "App Support";
+			sourceTree = "<group>";
+		};
 		032334291BBDFB21002D3C03 = {
 			isa = PBXGroup;
 			children = (
@@ -92,29 +116,26 @@
 		032334341BBDFB21002D3C03 /* LoresPlay */ = {
 			isa = PBXGroup;
 			children = (
-				032334351BBDFB21002D3C03 /* AppDelegate.swift */,
-				032334371BBDFB21002D3C03 /* ViewController.swift */,
-				0323344B1BBE0534002D3C03 /* Programs */,
 				032334521BBE0534002D3C03 /* ProgramSelector.swift */,
-				032334391BBDFB21002D3C03 /* Main.storyboard */,
-				0323343C1BBDFB21002D3C03 /* Assets.xcassets */,
-				0323343E1BBDFB21002D3C03 /* LaunchScreen.storyboard */,
-				032334411BBDFB21002D3C03 /* Info.plist */,
+				0313CF411BDC23E400531143 /* Student Programs */,
+				0323344B1BBE0534002D3C03 /* Example Programs */,
+				0313CF421BDC24B200531143 /* App Support */,
 			);
 			path = LoresPlay;
 			sourceTree = "<group>";
 		};
-		0323344B1BBE0534002D3C03 /* Programs */ = {
+		0323344B1BBE0534002D3C03 /* Example Programs */ = {
 			isa = PBXGroup;
 			children = (
-				0323344D1BBE0534002D3C03 /* EmptyProgram.swift */,
-				0323344C1BBE0534002D3C03 /* BallProgram.swift */,
-				0323344E1BBE0534002D3C03 /* GravelProgram.swift */,
-				0323344F1BBE0534002D3C03 /* HelloPixelProgram.swift */,
-				032334501BBE0534002D3C03 /* MoveProgram.swift */,
-				032334511BBE0534002D3C03 /* PebblesProgram.swift */,
+				0323344D1BBE0534002D3C03 /* 001-EmptyProgram.swift */,
+				0323344F1BBE0534002D3C03 /* 002-HelloPixelProgram.swift */,
+				032334511BBE0534002D3C03 /* 003-PebblesProgram.swift */,
+				0323344E1BBE0534002D3C03 /* 004-GravelProgram.swift */,
+				032334501BBE0534002D3C03 /* 005-MoveProgram.swift */,
+				0323344C1BBE0534002D3C03 /* 006-BallProgram.swift */,
 			);
-			path = Programs;
+			name = "Example Programs";
+			path = "Programs/Example Programs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,14 +209,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				032334561BBE0534002D3C03 /* HelloPixelProgram.swift in Sources */,
-				032334541BBE0534002D3C03 /* EmptyProgram.swift in Sources */,
-				032334551BBE0534002D3C03 /* GravelProgram.swift in Sources */,
-				032334571BBE0534002D3C03 /* MoveProgram.swift in Sources */,
+				032334561BBE0534002D3C03 /* 002-HelloPixelProgram.swift in Sources */,
+				032334541BBE0534002D3C03 /* 001-EmptyProgram.swift in Sources */,
+				032334551BBE0534002D3C03 /* 004-GravelProgram.swift in Sources */,
+				032334571BBE0534002D3C03 /* 005-MoveProgram.swift in Sources */,
 				032334591BBE0534002D3C03 /* ProgramSelector.swift in Sources */,
-				032334581BBE0534002D3C03 /* PebblesProgram.swift in Sources */,
+				032334581BBE0534002D3C03 /* 003-PebblesProgram.swift in Sources */,
 				032334381BBDFB21002D3C03 /* ViewController.swift in Sources */,
-				032334531BBE0534002D3C03 /* BallProgram.swift in Sources */,
+				032334531BBE0534002D3C03 /* 006-BallProgram.swift in Sources */,
+				0313CF441BDC24FC00531143 /* MyProgram.swift in Sources */,
 				032334361BBDFB21002D3C03 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

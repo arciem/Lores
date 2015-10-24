@@ -94,7 +94,7 @@ public class Program {
     }
     
     public func clear() {
-        canvas.clearToColor(Color(color: Color.White, alpha: 0.05))
+        canvas.clearToColor(Color(color: Color.White, alpha: 0.1))
     }
     
     public func setup() { }
