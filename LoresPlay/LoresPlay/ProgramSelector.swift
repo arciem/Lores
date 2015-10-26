@@ -1,3 +1,3 @@
 import Lores
 
-let program = MyProgram()
+let program = RectanglesProgram()

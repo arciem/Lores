@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0313CF441BDC24FC00531143 /* MyProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313CF431BDC24FC00531143 /* MyProgram.swift */; };
 		032334361BBDFB21002D3C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334351BBDFB21002D3C03 /* AppDelegate.swift */; };
 		032334381BBDFB21002D3C03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334371BBDFB21002D3C03 /* ViewController.swift */; };
 		0323343B1BBDFB21002D3C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032334391BBDFB21002D3C03 /* Main.storyboard */; };
@@ -20,21 +19,23 @@
 		032334571BBE0534002D3C03 /* 005-MoveProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334501BBE0534002D3C03 /* 005-MoveProgram.swift */; };
 		032334581BBE0534002D3C03 /* 003-PebblesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334511BBE0534002D3C03 /* 003-PebblesProgram.swift */; };
 		032334591BBE0534002D3C03 /* ProgramSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334521BBE0534002D3C03 /* ProgramSelector.swift */; };
-		0323345F1BBE07B4002D3C03 /* Lores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0323345E1BBE07B4002D3C03 /* Lores.framework */; };
-		032334601BBE07B4002D3C03 /* Lores.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0323345E1BBE07B4002D3C03 /* Lores.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		032334621BBE07CC002D3C03 /* Arciem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F3F91989CF7400365893 /* Arciem.framework */; };
-		032334631BBE07CC002D3C03 /* Arciem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0336F3F91989CF7400365893 /* Arciem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		039D52251BDC58E5002A6F4B /* Arciem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039D521D1BDC58B2002A6F4B /* Arciem.framework */; };
+		039D52261BDC58E5002A6F4B /* Arciem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 039D521D1BDC58B2002A6F4B /* Arciem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		039D52271BDC58E5002A6F4B /* Lores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039D521E1BDC58B2002A6F4B /* Lores.framework */; };
+		039D52281BDC58E5002A6F4B /* Lores.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 039D521E1BDC58B2002A6F4B /* Lores.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		039D522C1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D522A1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift */; };
+		039D522D1BDD8DA5002A6F4B /* RectanglesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D522B1BDD8DA5002A6F4B /* RectanglesProgram.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		032334611BBE07B4002D3C03 /* Embed Frameworks */ = {
+		039D52291BDC58E5002A6F4B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				032334601BBE07B4002D3C03 /* Lores.framework in Embed Frameworks */,
-				032334631BBE07CC002D3C03 /* Arciem.framework in Embed Frameworks */,
+				039D52281BDC58E5002A6F4B /* Lores.framework in Embed Frameworks */,
+				039D52261BDC58E5002A6F4B /* Arciem.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,7 +43,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0313CF431BDC24FC00531143 /* MyProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProgram.swift; sourceTree = "<group>"; };
 		0313CF461BDC392100531143 /* LoresPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = LoresPlayground.playground; path = ../LoresPlayground.playground; sourceTree = "<group>"; };
 		032334321BBDFB21002D3C03 /* LoresPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoresPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		032334351BBDFB21002D3C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +58,10 @@
 		032334501BBE0534002D3C03 /* 005-MoveProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "005-MoveProgram.swift"; sourceTree = "<group>"; };
 		032334511BBE0534002D3C03 /* 003-PebblesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "003-PebblesProgram.swift"; sourceTree = "<group>"; };
 		032334521BBE0534002D3C03 /* ProgramSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramSelector.swift; sourceTree = "<group>"; };
-		0323345E1BBE07B4002D3C03 /* Lores.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Lores.framework; path = "/Users/ironwolf/Library/Developer/Xcode/DerivedData/Lores-gypyzzxvaebephedzahthhaakdkt/Build/Products/Debug-iphoneos/Lores.framework"; sourceTree = "<absolute>"; };
-		0336F3F91989CF7400365893 /* Arciem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Arciem.framework; path = "../../../Library/Developer/Xcode/DerivedData/Lores-enknurcmdmfrzreefhmdpcrdeqsf/Build/Products/Debug-iphoneos/Arciem.framework"; sourceTree = "<group>"; };
+		039D521D1BDC58B2002A6F4B /* Arciem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Arciem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		039D521E1BDC58B2002A6F4B /* Lores.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lores.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		039D522A1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotsAndLinesProgram.swift; sourceTree = "<group>"; };
+		039D522B1BDD8DA5002A6F4B /* RectanglesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectanglesProgram.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0323345F1BBE07B4002D3C03 /* Lores.framework in Frameworks */,
-				032334621BBE07CC002D3C03 /* Arciem.framework in Frameworks */,
+				039D52271BDC58E5002A6F4B /* Lores.framework in Frameworks */,
+				039D52251BDC58E5002A6F4B /* Arciem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +80,8 @@
 		0313CF411BDC23E400531143 /* Student Programs */ = {
 			isa = PBXGroup;
 			children = (
-				0313CF431BDC24FC00531143 /* MyProgram.swift */,
+				039D522A1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift */,
+				039D522B1BDD8DA5002A6F4B /* RectanglesProgram.swift */,
 			);
 			name = "Student Programs";
 			path = "Programs/Student Programs";
@@ -87,7 +90,8 @@
 		0313CF421BDC24B200531143 /* App Support */ = {
 			isa = PBXGroup;
 			children = (
-				0323345E1BBE07B4002D3C03 /* Lores.framework */,
+				039D521D1BDC58B2002A6F4B /* Arciem.framework */,
+				039D521E1BDC58B2002A6F4B /* Lores.framework */,
 				032334351BBDFB21002D3C03 /* AppDelegate.swift */,
 				032334371BBDFB21002D3C03 /* ViewController.swift */,
 				032334391BBDFB21002D3C03 /* Main.storyboard */,
@@ -150,7 +154,7 @@
 				0323342E1BBDFB21002D3C03 /* Sources */,
 				0323342F1BBDFB21002D3C03 /* Frameworks */,
 				032334301BBDFB21002D3C03 /* Resources */,
-				032334611BBE07B4002D3C03 /* Embed Frameworks */,
+				039D52291BDC58E5002A6F4B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,15 +215,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039D522D1BDD8DA5002A6F4B /* RectanglesProgram.swift in Sources */,
 				032334561BBE0534002D3C03 /* 002-HelloPixelProgram.swift in Sources */,
 				032334541BBE0534002D3C03 /* 001-EmptyProgram.swift in Sources */,
 				032334551BBE0534002D3C03 /* 004-GravelProgram.swift in Sources */,
 				032334571BBE0534002D3C03 /* 005-MoveProgram.swift in Sources */,
 				032334591BBE0534002D3C03 /* ProgramSelector.swift in Sources */,
 				032334581BBE0534002D3C03 /* 003-PebblesProgram.swift in Sources */,
+				039D522C1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift in Sources */,
 				032334381BBDFB21002D3C03 /* ViewController.swift in Sources */,
 				032334531BBE0534002D3C03 /* 006-BallProgram.swift in Sources */,
-				0313CF441BDC24FC00531143 /* MyProgram.swift in Sources */,
 				032334361BBDFB21002D3C03 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
