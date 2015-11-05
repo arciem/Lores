@@ -30,8 +30,8 @@ class MoveProgram : Program {
     }
     
     override func draw()  {
-        canvas.setPoint(redPosition, toColor: Color.Red)
-        canvas.setPoint(bluePosition, toColor: Color.Blue)
+        canvas[redPosition] = .Red
+        canvas[bluePosition] = .Blue
     }
     
 }

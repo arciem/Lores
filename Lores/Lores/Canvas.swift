@@ -162,6 +162,24 @@ public class Canvas {
         return Color(red: redFData[offset], green: greenFData[offset], blue: blueFData[offset], alpha: alphaFData[offset])
     }
     
+    public subscript(point: Point) -> Color {
+        get {
+            return colorAtPoint(point)
+        }
+        set {
+            setPoint(point, toColor: newValue)
+        }
+    }
+    
+    public subscript(x: Int, y: Int) -> Color {
+        get {
+            return colorAtPoint(Point(x: x, y: y))
+        }
+        set {
+            setPoint(Point(x: x, y: y), toColor: newValue)
+        }
+    }
+    
     public func clearToColor(color: Color) {
         invalidateImage()
         

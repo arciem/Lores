@@ -9,7 +9,7 @@ class GravelProgram : Program {
     
     override func draw()  {
         for _ in 1...50 {
-            canvas.setPoint(canvas.randomPoint(), toColor: Color.randomColor())
+            canvas[canvas.randomPoint()] = .randomColor()
         }
     }
     

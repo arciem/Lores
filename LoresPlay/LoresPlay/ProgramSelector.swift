@@ -1,3 +1,3 @@
 import Lores
 
-let program = RectanglesProgram()
+let program = DotsAndLinesProgram()

@@ -69,7 +69,7 @@ class BallProgram : Program {
         }
         
         func draw(canvas: Canvas) {
-            canvas.setPoint(location, toColor: color)
+            canvas[location] = color
         }
     }
 }
