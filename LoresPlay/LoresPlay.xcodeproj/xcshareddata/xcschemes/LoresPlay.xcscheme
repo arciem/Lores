@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "035552F71C0F5F4200E0FCA7"
+               BuildableName = "WolfCore.framework"
+               BlueprintName = "WolfCore"
+               ReferencedContainer = "container:../WolfCore/WolfCore.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "036D8F5C1989BA70003FCB35"
                BuildableName = "Arciem.framework"
                BlueprintName = "Arciem"
