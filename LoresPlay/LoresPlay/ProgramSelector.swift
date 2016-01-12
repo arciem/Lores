@@ -1,3 +1,3 @@
 import Lores
 
-let program = DotsAndLinesProgram()
+let program = BallProgram()

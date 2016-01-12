@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Arciem LLC. All rights reserved.
 //
 
-import Arciem
+import WolfCore
 
-class BackgroundView : CImageView {
+class BackgroundView : ImageView {
     override func setup() {
         super.setup()
         

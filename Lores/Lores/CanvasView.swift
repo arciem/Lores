@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Arciem LLC. All rights reserved.
 //
 
-import Arciem
+import WolfCore
 import QuartzCore
 
-class CanvasView : CImageView {
+class CanvasView : ImageView {
     var touchBegan: ((point: CGPoint) -> Void)?
     var touchMoved: ((point: CGPoint) -> Void)?
     var touchEnded: ((point: CGPoint) -> Void)?

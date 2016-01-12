@@ -1,5 +1,5 @@
 import Lores
-import Arciem
+import WolfCore
 
 typealias Point = Lores.Point
 

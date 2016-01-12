@@ -21,8 +21,6 @@
 		032334591BBE0534002D3C03 /* ProgramSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334521BBE0534002D3C03 /* ProgramSelector.swift */; };
 		036B83441C431DDC00491AFF /* WolfCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036B83411C431D2500491AFF /* WolfCore.framework */; };
 		036B83451C431DDC00491AFF /* WolfCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 036B83411C431D2500491AFF /* WolfCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		039D52251BDC58E5002A6F4B /* Arciem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039D521D1BDC58B2002A6F4B /* Arciem.framework */; };
-		039D52261BDC58E5002A6F4B /* Arciem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 039D521D1BDC58B2002A6F4B /* Arciem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		039D52271BDC58E5002A6F4B /* Lores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039D521E1BDC58B2002A6F4B /* Lores.framework */; };
 		039D52281BDC58E5002A6F4B /* Lores.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 039D521E1BDC58B2002A6F4B /* Lores.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		039D522C1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D522A1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift */; };
@@ -38,7 +36,6 @@
 			files = (
 				039D52281BDC58E5002A6F4B /* Lores.framework in Embed Frameworks */,
 				036B83451C431DDC00491AFF /* WolfCore.framework in Embed Frameworks */,
-				039D52261BDC58E5002A6F4B /* Arciem.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +59,6 @@
 		032334511BBE0534002D3C03 /* 003-PebblesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "003-PebblesProgram.swift"; sourceTree = "<group>"; };
 		032334521BBE0534002D3C03 /* ProgramSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramSelector.swift; sourceTree = "<group>"; };
 		036B83411C431D2500491AFF /* WolfCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WolfCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		039D521D1BDC58B2002A6F4B /* Arciem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Arciem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		039D521E1BDC58B2002A6F4B /* Lores.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lores.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		039D522A1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotsAndLinesProgram.swift; sourceTree = "<group>"; };
 		039D522B1BDD8DA5002A6F4B /* RectanglesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectanglesProgram.swift; sourceTree = "<group>"; };
@@ -75,7 +71,6 @@
 			files = (
 				039D52271BDC58E5002A6F4B /* Lores.framework in Frameworks */,
 				036B83441C431DDC00491AFF /* WolfCore.framework in Frameworks */,
-				039D52251BDC58E5002A6F4B /* Arciem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				036B83411C431D2500491AFF /* WolfCore.framework */,
-				039D521D1BDC58B2002A6F4B /* Arciem.framework */,
 				039D521E1BDC58B2002A6F4B /* Lores.framework */,
 				032334351BBDFB21002D3C03 /* AppDelegate.swift */,
 				032334371BBDFB21002D3C03 /* ViewController.swift */,

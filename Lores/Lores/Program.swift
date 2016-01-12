@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Arciem LLC. All rights reserved.
 //
 
-import Arciem
+import WolfCore
 
 public class Program {
     var _canvasSize = Size(width: 41, height: 31)

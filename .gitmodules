@@ -1,6 +1,3 @@
-[submodule "Arciem"]
-	path = Arciem
-	url = git@github.com:arciem/Arciem.git
 [submodule "WolfCore"]
 	path = WolfCore
 	url = https://github.com/arciem/WolfCore.git

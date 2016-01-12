@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Arciem LLC. All rights reserved.
 //
 
-public struct Offset : CustomStringConvertible {
+public struct Offset {
     public let dx: Int
     public let dy: Int
     
@@ -14,10 +14,12 @@ public struct Offset : CustomStringConvertible {
         self.dx = dx
         self.dy = dy
     }
-    
+}
+
+extension Offset: CustomStringConvertible {
     public var description: String {
-    get {
-        return "Lores.Offset(dx:\(dx) dy:\(dy))"
-    }
+        get {
+            return "Lores.Offset(dx:\(dx) dy:\(dy))"
+        }
     }
 }

@@ -6,9 +6,7 @@
 //  Copyright (c) 2014 Arciem LLC. All rights reserved.
 //
 
-import Foundation
-
-public struct Point : CustomStringConvertible {
+public struct Point {
     public let x: Int
     public let y: Int
     
@@ -16,10 +14,12 @@ public struct Point : CustomStringConvertible {
         self.x = x
         self.y = y
     }
-    
+}
+
+extension Point: CustomStringConvertible {
     public var description: String {
-    get {
-        return "Lores.Point(x:\(x) y:\(y))"
-    }
+        get {
+            return "Lores.Point(x:\(x) y:\(y))"
+        }
     }
 }

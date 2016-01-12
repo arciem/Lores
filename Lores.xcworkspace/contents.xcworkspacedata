@@ -10,7 +10,4 @@
    <FileRef
       location = "group:WolfCore/WolfCore.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "container:Arciem/Arciem.xcodeproj">
-   </FileRef>
 </Workspace>

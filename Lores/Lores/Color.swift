@@ -6,6 +6,6 @@
 //  Copyright (c) 2014 Arciem LLC. All rights reserved.
 //
 
-import Arciem
+import WolfCore
 
-public typealias Color = Arciem.Color
+public typealias Color = WolfCore.Color

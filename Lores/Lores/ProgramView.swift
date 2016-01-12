@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Arciem LLC. All rights reserved.
 //
 
-import Arciem
+import WolfCore
 
-public class ProgramView: CView {
+public class ProgramView: View {
     public var program: Program!
     var canvasView: CanvasView!
     var backgroundView: BackgroundView!
@@ -56,7 +56,7 @@ public class ProgramView: CView {
     func canvasPointForCanvasViewPoint(point: CGPoint) -> Point {
         let canvasImageSize = self.program.canvas.image.size
         let canvasImageSizeScaled = canvasImageSize.aspectFitWithinSize(self.canvasView.bounds.size)
-        let canvasImageFrame = CGRect(origin: CGPoint.zero, size: canvasImageSizeScaled).rectBySettingMid(self.canvasView.bounds.mid)
+        let canvasImageFrame = CGRect(origin: .zero, size: canvasImageSizeScaled).settingMidXmidY(self.canvasView.bounds.midXmidY)
         let fx = Math.map(point.x, canvasImageFrame.minX, canvasImageFrame.maxX, CGFloat(0), canvasImageSize.width)
         let fy = Math.map(point.y, canvasImageFrame.minY, canvasImageFrame.maxY, CGFloat(0), canvasImageSize.height)
         let x = Int(floor(fx))

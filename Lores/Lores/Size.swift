@@ -6,21 +6,15 @@
 //  Copyright (c) 2014 Arciem LLC. All rights reserved.
 //
 
-import Arciem
+import WolfCore
 
-public struct Size : CustomStringConvertible {
+public struct Size {
     public let width: Int
     public let height: Int
     
     public init(width: Int, height: Int) {
         self.width = width
         self.height = height
-    }
-
-    public var description: String {
-    get {
-        return "Lores.Size(width:\(width) height:\(height))"
-    }
     }
     
     public func randomX() -> Int {
@@ -33,5 +27,13 @@ public struct Size : CustomStringConvertible {
     
     public func randomPoint() -> Point {
         return Point(x: randomX(), y: randomY())
+    }
+}
+
+extension Size: CustomStringConvertible {
+    public var description: String {
+        get {
+            return "Lores.Size(width:\(width) height:\(height))"
+        }
     }
 }

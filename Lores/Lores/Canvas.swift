@@ -8,7 +8,7 @@
 
 import UIKit
 import Accelerate
-import Arciem
+import WolfCore
 
 public class Canvas {
     public let size: Size
@@ -149,17 +149,17 @@ public class Canvas {
         invalidateImage()
         
         let offset = offsetForPoint(point)
-        alphaFData[offset] = color.alpha
-        redFData[offset] = color.red
-        greenFData[offset] = color.green
-        blueFData[offset] = color.blue
+        alphaFData[offset] = Float(color.alpha)
+        redFData[offset] = Float(color.red)
+        greenFData[offset] = Float(color.green)
+        blueFData[offset] = Float(color.blue)
     }
     
     public func colorAtPoint(point: Point) -> Color {
         checkPoint(point)
 
         let offset = offsetForPoint(point)
-        return Color(red: redFData[offset], green: greenFData[offset], blue: blueFData[offset], alpha: alphaFData[offset])
+        return Color(red: Frac(redFData[offset]), green: Frac(greenFData[offset]), blue: Frac(blueFData[offset]), alpha: Frac(alphaFData[offset]))
     }
     
     public subscript(point: Point) -> Color {
@@ -183,10 +183,10 @@ public class Canvas {
     public func clearToColor(color: Color) {
         invalidateImage()
         
-        vImageOverwriteChannelsWithScalar_PlanarF(color.red, &redF, UInt32(kvImageNoFlags))
-        vImageOverwriteChannelsWithScalar_PlanarF(color.green, &greenF, UInt32(kvImageNoFlags))
-        vImageOverwriteChannelsWithScalar_PlanarF(color.blue, &blueF, UInt32(kvImageNoFlags))
-        vImageOverwriteChannelsWithScalar_PlanarF(color.alpha, &alphaF, UInt32(kvImageNoFlags))
+        vImageOverwriteChannelsWithScalar_PlanarF(Float(color.red), &redF, UInt32(kvImageNoFlags))
+        vImageOverwriteChannelsWithScalar_PlanarF(Float(color.green), &greenF, UInt32(kvImageNoFlags))
+        vImageOverwriteChannelsWithScalar_PlanarF(Float(color.blue), &blueF, UInt32(kvImageNoFlags))
+        vImageOverwriteChannelsWithScalar_PlanarF(Float(color.alpha), &alphaF, UInt32(kvImageNoFlags))
     }
     
     public func randomX() -> Int {

@@ -28,20 +28,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "036D8F5C1989BA70003FCB35"
-               BuildableName = "Arciem.framework"
-               BlueprintName = "Arciem"
-               ReferencedContainer = "container:../Arciem/Arciem.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "036D8F9A1989BEF9003FCB35"
                BuildableName = "Lores.framework"
                BlueprintName = "Lores"
