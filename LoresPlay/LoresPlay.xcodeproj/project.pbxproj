@@ -25,6 +25,7 @@
 		039D52281BDC58E5002A6F4B /* Lores.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 039D521E1BDC58B2002A6F4B /* Lores.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		039D522C1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D522A1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift */; };
 		039D522D1BDD8DA5002A6F4B /* RectanglesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D522B1BDD8DA5002A6F4B /* RectanglesProgram.swift */; };
+		03CEACF71C5FB7E10014A07A /* 002-CountToTen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CEACF61C5FB7E10014A07A /* 002-CountToTen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,7 @@
 		039D521E1BDC58B2002A6F4B /* Lores.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lores.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		039D522A1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotsAndLinesProgram.swift; sourceTree = "<group>"; };
 		039D522B1BDD8DA5002A6F4B /* RectanglesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectanglesProgram.swift; sourceTree = "<group>"; };
+		03CEACF61C5FB7E10014A07A /* 002-CountToTen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "002-CountToTen.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				0323344D1BBE0534002D3C03 /* 001-EmptyProgram.swift */,
+				03CEACF61C5FB7E10014A07A /* 002-CountToTen.swift */,
 				0323344F1BBE0534002D3C03 /* 002-HelloPixelProgram.swift */,
 				032334511BBE0534002D3C03 /* 003-PebblesProgram.swift */,
 				0323344E1BBE0534002D3C03 /* 004-GravelProgram.swift */,
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				039D522D1BDD8DA5002A6F4B /* RectanglesProgram.swift in Sources */,
+				03CEACF71C5FB7E10014A07A /* 002-CountToTen.swift in Sources */,
 				032334561BBE0534002D3C03 /* 002-HelloPixelProgram.swift in Sources */,
 				032334541BBE0534002D3C03 /* 001-EmptyProgram.swift in Sources */,
 				032334551BBE0534002D3C03 /* 004-GravelProgram.swift in Sources */,

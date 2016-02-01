@@ -1,3 +1,3 @@
 import Lores
 
-let program = BallProgram()
+let program = CountToTenProgram()

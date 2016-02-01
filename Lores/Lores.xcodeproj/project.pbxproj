@@ -20,6 +20,7 @@
 		036D8FCE1989C666003FCB35 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03825F4C198999F4001A526D /* BackgroundView.swift */; };
 		036D8FCF1989C669003FCB35 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E34064197F7873005AA69F /* ProgramView.swift */; };
 		036D8FD01989C682003FCB35 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03825F4319896C89001A526D /* Program.swift */; };
+		03CEACFB1C5FBEE50014A07A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CEACFA1C5FBEE50014A07A /* Log.swift */; };
 		0579D2E8198F155F006891D7 /* Offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579D2E7198F155F006891D7 /* Offset.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		03825F4C198999F4001A526D /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		03825F4E19899ACD001A526D /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		03826F2C1988723400704E30 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		03CEACFA1C5FBEE50014A07A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		03E3400E197F1132005AA69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03E3400F197F1132005AA69F /* Lores-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lores-Bridging-Header.h"; sourceTree = "<group>"; };
 		03E34064197F7873005AA69F /* ProgramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				0579D2E7198F155F006891D7 /* Offset.swift */,
 				036608BD197F933500DCDBC6 /* Color.swift */,
 				03825F4319896C89001A526D /* Program.swift */,
+				03CEACFA1C5FBEE50014A07A /* Log.swift */,
 				03E3400D197F1132005AA69F /* Supporting Files */,
 			);
 			path = Lores;
@@ -195,6 +198,7 @@
 			files = (
 				036D8FD01989C682003FCB35 /* Program.swift in Sources */,
 				0579D2E8198F155F006891D7 /* Offset.swift in Sources */,
+				03CEACFB1C5FBEE50014A07A /* Log.swift in Sources */,
 				036D8FCE1989C666003FCB35 /* BackgroundView.swift in Sources */,
 				036D8FCF1989C669003FCB35 /* ProgramView.swift in Sources */,
 				036D8FC81989C222003FCB35 /* Point.swift in Sources */,
