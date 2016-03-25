@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "035552F71C0F5F4200E0FCA7"
                BuildableName = "WolfCore.framework"
-               BlueprintName = "WolfCore"
+               BlueprintName = "WolfCore-iOS"
                ReferencedContainer = "container:../WolfCore/WolfCore.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
