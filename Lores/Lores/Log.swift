@@ -8,9 +8,9 @@
 
 import WolfCore
 
-public var logOutputStream: OutputStreamType = standardOutputStream
+public var logOutputStream: StandardOutputStream = standardOutputStream
 
-public func logPrint(items: Any..., separator: String = " ", terminator: String = "\n") {
-    let s = items.map({ "\($0)" }).joinWithSeparator(separator) + terminator
+public func logPrint(_ items: Any..., separator: String = " ", terminator: String = "\n") {
+    let s = items.map({ "\($0)" }).joined(separator: separator) + terminator
     logOutputStream.write(s)
 }

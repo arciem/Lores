@@ -8,101 +8,117 @@
 
 import WolfCore
 
-public class Program {
-    var _canvasSize = Size(width: 41, height: 31)
-    var _canvas: Canvas?
-    let serializer: Serializer
-    var _framesPerSecond: Float = 0.0
-    var canceler: Canceler?
-    var needsDisplay: Bool = true
-    public var didDisplay: DispatchBlock?
-    
-    public private(set) var canvas: Canvas! {
-    get {
-        if _canvas == nil {
-            _canvas = Canvas(size: canvasSize)
+open class Program {
+    private var _canvasSize = Size(width: 41, height: 31)
+    private var _canvas: Canvas?
+    private var _framesPerSecond: Float = 0.0
+    private var canceler: Cancelable?
+    private var needsDisplay: Bool = true
+    public var didDisplay: Block?
+
+    public fileprivate(set) var canvas: Canvas! {
+        get {
+            if _canvas == nil {
+                _canvas = Canvas(size: canvasSize)
+            }
+            return _canvas
         }
-        return _canvas
+        set {
+            _canvas = newValue
+        }
     }
-    set {
-        _canvas = newValue
-    }
-    }
-    
-    func invalidateCanvas() {
+
+    private func invalidateCanvas() {
         canvas = nil
     }
-    
+
     public var canvasSize: Size {
-    get {
-        return _canvasSize
+        get {
+            return _canvasSize
+        }
+        set {
+            _canvasSize = newValue
+            invalidateCanvas()
+        }
     }
-    set {
-        _canvasSize = newValue
-        invalidateCanvas()
-    }
-    }
-    
+
+    private var queue = DispatchQueue(label: "Program Queue", qos: DispatchQoS.init(qosClass: .userInteractive, relativePriority: 0), attributes: [])
+    private var dispatchSource: DispatchSourceTimer!
+
     public var framesPerSecond: Float {
-    get {
-        return _framesPerSecond
-    }
-    set {
-        if _framesPerSecond != newValue {
-            _framesPerSecond = newValue
-            if let canceler = canceler {
-                canceler.isCanceled = true
-            }
-            let interval = NSTimeInterval(Float(1.0) / _framesPerSecond)
-            canceler = dispatchRepeatedOnBackground(atInterval: interval) { [unowned self] canceler in
-                self.serializer.dispatch() {
+        get {
+            return _framesPerSecond
+        }
+        set {
+            if _framesPerSecond != newValue {
+                _framesPerSecond = newValue
+                let interval = TimeInterval(Float(1.0) / _framesPerSecond)
+                print("framesPerSecond: \(newValue), interval: \(interval)")
+                dispatchSource?.cancel()
+                dispatchSource = DispatchSource.makeTimerSource(flags: [.strict], queue: queue)
+                dispatchSource.scheduleRepeating(deadline: .now(), interval: interval, leeway: DispatchTimeInterval.milliseconds(0))
+                dispatchSource.setEventHandler { [unowned self] in
                     self._update()
+                    dispatchOnMain {
+                        self.displayIfNeeded()
+                    }
                 }
-                self.serializer.dispatchOnMain() {
-                    self.displayIfNeeded()
-                }
+                dispatchSource.resume()
             }
         }
     }
-    }
-    
+
     public init() {
-        self.serializer = Serializer(name: "ProgramView serializer")
         _setup()
     }
-    
-    func _setup() {
+
+    private func _setup() {
         setup()
     }
-    
-    func _update() {
+
+    private var lastUpdateTime: TimeInterval?
+    private var averageElapsedTime: TimeInterval?
+
+    private func _update() {
+        let updateTime = Date.timeIntervalSinceReferenceDate
+        if let lastUpdateTime = lastUpdateTime {
+            let elapsedTime = updateTime - lastUpdateTime
+            if let averageElapsedTime = averageElapsedTime {
+                self.averageElapsedTime = (elapsedTime + averageElapsedTime) / 2
+            } else {
+                averageElapsedTime = elapsedTime
+            }
+//            print("target: \(1.0 / framesPerSecond) elapsed: \(elapsedTime) averageElapsed: \(averageElapsedTime!)")
+        }
+        lastUpdateTime = updateTime
+
         update()
         needsDisplay = true
     }
-    
+
     public func display() {
         clear()
         draw()
         didDisplay?()
     }
-    
-    func displayIfNeeded() {
+
+    private func displayIfNeeded() {
         if needsDisplay {
             display()
             needsDisplay = false
         }
     }
-    
-    public func clear() {
-        canvas.clearToColor(Color(color: Color.White, alpha: 0.1))
+
+    open func clear() {
+        canvas.clearToColor(Color(color: .white, alpha: 0.1))
     }
-    
-    public func setup() { }
-    public func update() { }
-    public func draw() { }
-    
-    public func touchBeganAtPoint(point: Point) { }
-    public func touchMovedAtPoint(point: Point) { }
-    public func touchEndedAtPoint(point: Point) { }
-    public func touchCancelledAtPoint(point: Point) { }
+
+    open func setup() { }
+    open func update() { }
+    open func draw() { }
+
+    open func touchBeganAtPoint(_ point: Point) { }
+    open func touchMovedAtPoint(_ point: Point) { }
+    open func touchEndedAtPoint(_ point: Point) { }
+    open func touchCancelledAtPoint(_ point: Point) { }
 }

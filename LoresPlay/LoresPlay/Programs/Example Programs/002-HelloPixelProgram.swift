@@ -1,9 +1,9 @@
 import Lores
 
-class HelloPixelProgram : Program {
-    
+class HelloPixelProgram: Program {
+
     override func draw()  {
-        canvas[0, 0] = .Red
+        canvas[0, 0] = .red
     }
 
 }

@@ -1,6 +1,6 @@
 import Lores
 
-class GravelProgram : Program {
+class GravelProgram: Program {
     
     override func setup() {
         framesPerSecond = 20
@@ -9,7 +9,7 @@ class GravelProgram : Program {
     
     override func draw()  {
         for _ in 1...50 {
-            canvas[canvas.randomPoint()] = .randomColor()
+            canvas[canvas.randomPoint()] = .random()
         }
     }
     

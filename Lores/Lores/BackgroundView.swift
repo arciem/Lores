@@ -12,14 +12,8 @@ class BackgroundView : ImageView {
     override func setup() {
         super.setup()
         
-        contentMode = .ScaleAspectFill
-        image = UIImage(named: "BlackLeather.jpg", inBundle: NSBundle(identifier: "com.arciem.Lores"), compatibleWithTraitCollection: nil)
-        backgroundColor = UIColor.blackColor()
-    }
-    
-    override func didMoveToSuperview() {
-        if superview != nil {
-            constrainToSuperview()
-        }
+        contentMode = .scaleAspectFill
+        image = UIImage(named: "BlackLeather.jpg", in: Bundle(identifier: "com.arciem.Lores"), compatibleWith: nil)
+        backgroundColor = UIColor.black
     }
 }

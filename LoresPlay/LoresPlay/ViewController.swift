@@ -12,7 +12,7 @@ import Lores
 class ViewController: UIViewController {
     @IBOutlet weak var programView: ProgramView!
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
 
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         }
     }
     
-    override func viewWillAppear(animated: Bool)  {
+    override func viewWillAppear(_ animated: Bool)  {
         super.viewWillAppear(animated)
         programView.program.display()
     }

@@ -1,6 +1,6 @@
 import Lores
 
-class MoveProgram : Program {
+class MoveProgram: Program {
     var redPosition = Point(x: 0, y: 0)
     var bluePosition = Point(x: 0, y: 0)
     var redDirection = 1
@@ -30,8 +30,7 @@ class MoveProgram : Program {
     }
     
     override func draw()  {
-        canvas[redPosition] = .Red
-        canvas[bluePosition] = .Blue
+        canvas[redPosition] = .red
+        canvas[bluePosition] = .blue
     }
-    
 }

@@ -1,4 +1,4 @@
 import Lores
 
-class EmptyProgram : Program {
+class EmptyProgram: Program {
 }

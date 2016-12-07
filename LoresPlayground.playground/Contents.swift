@@ -1,30 +1,75 @@
 import Lores
-import XCPlayground
 
 class PlaygroundProgram : Program {
-    
-    override func draw()  {
-        let p = Point(x: 0, y: 0)
-        let c = Color.Red
-        canvas.setPoint(p, toColor: c)
+    var balls = [Ball]()
+
+    override func setup() {
+        framesPerSecond = 1
+        canvasSize = Size(width: 30, height: 30)
+
+        for _ in 1...20  {
+            let dx = Random.randomChoice(1, -1)
+            let dy = Random.randomChoice(1, -1)
+
+            let ball = Ball(location: canvas.randomPoint(), direction: Offset(dx: dx, dy: dy), color: .random())
+            balls.append(ball)
+        }
     }
-    
+
+    override func update() {
+        for ball in balls {
+            ball.update(canvas)
+        }
+    }
+
+    override func draw() {
+        for ball in balls {
+            ball.draw(canvas)
+        }
+    }
 }
 
+class Ball {
+    var location: Point
+    var direction: Offset
+    let color: Color
 
-public func runProgram() {
-    let programView = ProgramView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-    programView.backgroundColor = UIColor.redColor()
-    programView.program = PlaygroundProgram()
-    programView.program.didDisplay = {
-        programView.flush()
+    init(location: Point, direction: Offset, color: Color) {
+        self.location = location
+        self.direction = direction
+        self.color = color
     }
-    
-    let currentPage = XCPlayground.XCPlaygroundPage.currentPage
-    currentPage.liveView = programView
-    currentPage.needsIndefiniteExecution = true
-    programView.program.display()
+
+    func update(_ canvas: Canvas) {
+        var newDX = direction.dx
+        var newDY = direction.dy
+
+        if location.y + newDY > canvas.maxY {
+            newDY = -1
+        }
+        if location.y + newDY < canvas.minY {
+            newDY = 1
+        }
+
+
+        if location.x + newDX > canvas.maxX {
+            newDX = -1
+        }
+        if location.x + newDX < canvas.minX {
+            newDX = 1
+        }
+
+
+        let newX = location.x + newDX
+        let newY = location.y + newDY
+
+        location = Point(x: newX, y: newY)
+        direction = Offset(dx: newDX, dy: newDY)
+    }
+
+    func draw(_ canvas: Canvas) {
+        canvas[location] = color
+    }
 }
 
-
-runProgram()
+run(program: PlaygroundProgram())

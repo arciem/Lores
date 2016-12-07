@@ -19,24 +19,24 @@
 		032334571BBE0534002D3C03 /* 005-MoveProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334501BBE0534002D3C03 /* 005-MoveProgram.swift */; };
 		032334581BBE0534002D3C03 /* 003-PebblesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334511BBE0534002D3C03 /* 003-PebblesProgram.swift */; };
 		032334591BBE0534002D3C03 /* ProgramSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032334521BBE0534002D3C03 /* ProgramSelector.swift */; };
-		036B83441C431DDC00491AFF /* WolfCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036B83411C431D2500491AFF /* WolfCore.framework */; };
-		036B83451C431DDC00491AFF /* WolfCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 036B83411C431D2500491AFF /* WolfCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		039D52271BDC58E5002A6F4B /* Lores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039D521E1BDC58B2002A6F4B /* Lores.framework */; };
-		039D52281BDC58E5002A6F4B /* Lores.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 039D521E1BDC58B2002A6F4B /* Lores.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		034D31181DF795DC004ADC34 /* WolfCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034D31171DF795DC004ADC34 /* WolfCore.framework */; };
+		034D31191DF795DC004ADC34 /* WolfCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 034D31171DF795DC004ADC34 /* WolfCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		034D311C1DF795DF004ADC34 /* Lores.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034D311B1DF795DF004ADC34 /* Lores.framework */; };
+		034D311D1DF795DF004ADC34 /* Lores.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 034D311B1DF795DF004ADC34 /* Lores.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		039D522C1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D522A1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift */; };
 		039D522D1BDD8DA5002A6F4B /* RectanglesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D522B1BDD8DA5002A6F4B /* RectanglesProgram.swift */; };
 		03CEACF71C5FB7E10014A07A /* 002-CountToTen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CEACF61C5FB7E10014A07A /* 002-CountToTen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		039D52291BDC58E5002A6F4B /* Embed Frameworks */ = {
+		034D311A1DF795DC004ADC34 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				039D52281BDC58E5002A6F4B /* Lores.framework in Embed Frameworks */,
-				036B83451C431DDC00491AFF /* WolfCore.framework in Embed Frameworks */,
+				034D311D1DF795DF004ADC34 /* Lores.framework in Embed Frameworks */,
+				034D31191DF795DC004ADC34 /* WolfCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,8 +59,8 @@
 		032334501BBE0534002D3C03 /* 005-MoveProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "005-MoveProgram.swift"; sourceTree = "<group>"; };
 		032334511BBE0534002D3C03 /* 003-PebblesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "003-PebblesProgram.swift"; sourceTree = "<group>"; };
 		032334521BBE0534002D3C03 /* ProgramSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramSelector.swift; sourceTree = "<group>"; };
-		036B83411C431D2500491AFF /* WolfCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WolfCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		039D521E1BDC58B2002A6F4B /* Lores.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lores.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		034D31171DF795DC004ADC34 /* WolfCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WolfCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		034D311B1DF795DF004ADC34 /* Lores.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lores.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		039D522A1BDD8DA5002A6F4B /* DotsAndLinesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotsAndLinesProgram.swift; sourceTree = "<group>"; };
 		039D522B1BDD8DA5002A6F4B /* RectanglesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectanglesProgram.swift; sourceTree = "<group>"; };
 		03CEACF61C5FB7E10014A07A /* 002-CountToTen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "002-CountToTen.swift"; sourceTree = "<group>"; };
@@ -71,8 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039D52271BDC58E5002A6F4B /* Lores.framework in Frameworks */,
-				036B83441C431DDC00491AFF /* WolfCore.framework in Frameworks */,
+				034D311C1DF795DF004ADC34 /* Lores.framework in Frameworks */,
+				034D31181DF795DC004ADC34 /* WolfCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +92,8 @@
 		0313CF421BDC24B200531143 /* App Support */ = {
 			isa = PBXGroup;
 			children = (
-				036B83411C431D2500491AFF /* WolfCore.framework */,
-				039D521E1BDC58B2002A6F4B /* Lores.framework */,
+				034D311B1DF795DF004ADC34 /* Lores.framework */,
+				034D31171DF795DC004ADC34 /* WolfCore.framework */,
 				032334351BBDFB21002D3C03 /* AppDelegate.swift */,
 				032334371BBDFB21002D3C03 /* ViewController.swift */,
 				032334391BBDFB21002D3C03 /* Main.storyboard */,
@@ -157,7 +157,7 @@
 				0323342E1BBDFB21002D3C03 /* Sources */,
 				0323342F1BBDFB21002D3C03 /* Frameworks */,
 				032334301BBDFB21002D3C03 /* Resources */,
-				039D52291BDC58E5002A6F4B /* Embed Frameworks */,
+				034D311A1DF795DC004ADC34 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,12 +174,13 @@
 		0323342A1BBDFB21002D3C03 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Arciem LLC";
 				TargetAttributes = {
 					032334311BBDFB21002D3C03 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 92TUA8H52D;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -269,8 +270,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -314,8 +317,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -334,6 +339,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -351,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arciem.LoresPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -366,6 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arciem.LoresPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

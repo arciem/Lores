@@ -10,46 +10,40 @@ import WolfCore
 import QuartzCore
 
 class CanvasView : ImageView {
-    var touchBegan: ((point: CGPoint) -> Void)?
-    var touchMoved: ((point: CGPoint) -> Void)?
-    var touchEnded: ((point: CGPoint) -> Void)?
-    var touchCancelled: ((point: CGPoint) -> Void)?
+    var touchBegan: ((_ point: CGPoint) -> Void)?
+    var touchMoved: ((_ point: CGPoint) -> Void)?
+    var touchEnded: ((_ point: CGPoint) -> Void)?
+    var touchCancelled: ((_ point: CGPoint) -> Void)?
     
     override func setup() {
         super.setup()
         
         layer.magnificationFilter = kCAFilterNearest
-        contentMode = .ScaleAspectFit
-        userInteractionEnabled = true
+        contentMode = .scaleAspectFit
+        isUserInteractionEnabled = true
     }
     
-    override func didMoveToSuperview() {
-        if superview != nil {
-            constrainToSuperview()
-        }
-    }
-    
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
-        let loc = touch.locationInView(self)
-        touchBegan?(point: loc)
+        let loc = touch.location(in: self)
+        touchBegan?(loc)
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
-        let loc = touch.locationInView(self)
-        touchMoved?(point: loc)
+        let loc = touch.location(in: self)
+        touchMoved?(loc)
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
-        let loc = touch.locationInView(self)
-        touchEnded?(point: loc)
+        let loc = touch.location(in: self)
+        touchEnded?(loc)
     }
     
-    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
+    override func touchesCancelled(_ touches: Set<UITouch>?, with event: UIEvent?) {
         let touch = touches!.first!
-        let loc = touch.locationInView(self)
-        touchCancelled?(point: loc)
+        let loc = touch.location(in: self)
+        touchCancelled?(loc)
     }
 }
